@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Oxanium;
+    src: url(../../assets/fonts/Oxanium-Medium.ttf);
+}
+
+@font-face {
+    font-family: OxaniumBold;
+    src: url(../../assets/fonts/Oxanium-Bold.ttf);
+}
+@font-face {
+    font-family: OxaniumLight;
+    src: url(../../assets/fonts/Oxanium-Light.ttf);
+}
+
+*{
+    font-family: Oxanium;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}

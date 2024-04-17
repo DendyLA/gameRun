@@ -1,0 +1,105 @@
+.promo{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 67px;
+    &__event_wrapper{
+        position: absolute;
+        background: rgba(0, 0, 0, .3);
+        width: 800px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px;
+        z-index: 0;
+;
+    }
+    &__event{
+        position: relative;
+        width: 800px;
+        height: 250px;
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+        background-image: url(../../../assets/img/main/cityEvent.png);
+        border-radius: 30px;
+        padding: 20px 35px 37px 35px;
+        z-index: 1;
+        &Status{
+            position: relative;
+            z-index: 1;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        &Title{
+            position: relative;
+            z-index: 1;
+            font-family: OxaniumXBold;
+            font-size: 30px;
+            color: #FFFFFF;
+            width: 236px;
+            height: 76px;
+            margin-top: 32px;
+        }
+        &Button{
+            position: relative;
+            z-index: 1;
+            width: 165px;
+            height: 40px;
+            background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+            border-radius: 100px;
+            border-style: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-top: 50px;
+            &:hover{
+                box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+            }
+        }
+    }
+    &__newUser{
+        position: relative;
+        width: 370px;
+        height: 250px;
+        background: #040203;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        padding: 15px 25px 5px 25px;
+        cursor: pointer;
+    }
+    &__img{
+        position: absolute;
+        width: 216px;
+        height: 216px;
+        left: 41%;
+        top: 31px;
+        z-index: 0;
+    }
+    &__title{
+        position: relative;
+        font-size: 30px;
+        color: #00FFF0;
+        font-family: OxaniumRegular;
+        z-index: 1;
+    }
+    &__descr{
+        font-size: 20px;
+        color: #FFFFFF;
+        font-family: OxaniumRegular;
+        margin-top: 10px;
+    }
+    &__percent{
+        font-size: 30px;
+        color: #00FFF0;
+        font-family: OxaniumXBold;
+        margin-top: 10px;
+    }
+    &__footer{
+        position: relative;
+        font-size: 20px;
+        color: #3D727F;
+        font-family: OxaniumRegular;
+        margin-top: 84px;
+        z-index: 1;
+    }
+}

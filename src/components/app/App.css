@@ -2,6 +2,14 @@
     font-family: Oxanium;
     src: url(../../assets/fonts/Oxanium-Medium.ttf);
 }
+@font-face {
+    font-family: OxaniumRegular;
+    src: url(../../assets/fonts/Oxanium-Regular.ttf);
+}
+@font-face {
+    font-family: OxaniumXBold;
+    src: url(../../assets/fonts/Oxanium-ExtraBold.ttf);
+}
 
 @font-face {
     font-family: OxaniumBold;

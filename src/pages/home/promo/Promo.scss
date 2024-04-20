@@ -30,6 +30,15 @@
             z-index: 1;
             font-size: 20px;
             color: #FFFFFF;
+            &::before{
+                content:'';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: #DB442A;
+                border-radius: 100%;
+                margin-right: 5px;
+            }
         }
         &Title{
             position: relative;
@@ -50,6 +59,7 @@
             border-radius: 100px;
             border-style: none;
             font-size: 16px;
+            font-family: OxaniumMedium;
             color: #FFFFFF;
             margin-top: 50px;
             &:hover{

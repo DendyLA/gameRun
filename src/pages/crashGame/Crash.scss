@@ -1,0 +1,50 @@
+.crash{
+
+    &__title{
+        position: relative;
+        font-family: OxaniumSBold;
+        font-size: 60px;
+        color: #FFFFFF;
+        margin-top: 67px;
+        &_user{
+            position: relative;
+            font-family: OxaniumSBold;
+            font-size: 60px;
+            color: #FFFFFF;
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 639px;
+                height: 1px;
+                background: #DB442A;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 570px;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 746px;
+            height: 1px;
+            background: #DB442A;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 270px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+}
+.users{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 87px;
+}

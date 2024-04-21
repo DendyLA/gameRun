@@ -1,15 +1,96 @@
 @font-face {
-    font-family: Oxanium;
-    src: url(../../assets/fonts/Oxanium-Medium.ttf);
+    font-family: OxaniumLight;
+    src: url('../../assets/fonts/Oxanium-Light.eot');
+    src: url('../../assets/fonts/Oxanium-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-Light.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OxaniumXLight;
+    src: url('../../assets/fonts/Oxanium-ExtraLight.eot');
+    src: url('../../assets/fonts/Oxanium-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-ExtraLight.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-ExtraLight.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OxaniumSBold;
+    src: url('../../assets/fonts/Oxanium-SemiBold.eot');
+    src: url('../../assets/fonts/Oxanium-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-SemiBold.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: OxaniumBold;
-    src: url(../../assets/fonts/Oxanium-Bold.ttf);
+    src: url('../../assets/fonts/Oxanium-Bold.eot');
+    src: url('../../assets/fonts/Oxanium-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-Bold.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OxaniumXBold;
+    src: url('../../assets/fonts/Oxanium-ExtraBold.eot');
+    src: url('../../assets/fonts/Oxanium-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-ExtraBold.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: OxaniumMedium;
+    src: url('../../assets/fonts/Oxanium-Medium.eot');
+    src: url('../../assets/fonts/Oxanium-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-Medium.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url('../../assets/fonts/Oxanium-Regular.eot');
+    src: url('../../assets/fonts/Oxanium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-Regular.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: OxaniumLight;
-    src: url(../../assets/fonts/Oxanium-Light.ttf);
+    font-family: OxaniumC;
+    src: url('../../assets/fonts/Oxanium-C.eot');
+    src: url('../../assets/fonts/Oxanium-C.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Oxanium-C.woff2') format('woff2'),
+        url('../../assets/fonts/Oxanium-C.woff') format('woff'),
+        url('../../assets/fonts/Oxanium-C.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 *{

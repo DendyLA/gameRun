@@ -20,4 +20,134 @@
         margin: auto;
         
     }
+    &__bid{
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 28px;
+        font-family: OxaniumC;
+        font-size: 60px;
+        color: #FFFFFF; //!!!!!!!!!!!!Font is another
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 639px;
+            height: 1px;
+            background: #DB442A;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 550px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
 }
+
+.double{
+
+    &__users{
+        position: relative;
+        max-width: 1200px;
+        height: 418px;
+        background: #3F4561;
+        border-radius: 30px 30px 0px 0px;
+        padding: 5px 0px;
+        
+        &Img{
+            width: 59.17px;
+            height: 50px;
+            margin-left: 20px;
+        }
+        &X{
+            position: absolute;
+            left: 90px;
+            top: 5px;
+            font-family: OxaniumBold;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &Cost{
+            position: absolute;
+            left: 90px;
+            top: 35px;
+            font-family: OxaniumBold;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &Num{
+            position: absolute;
+            top: 22px;
+            right: 18px;
+            font-family: OxaniumBold;
+            font-size: 16px;
+            color: #FFFFFF;
+            &::before{
+                content: url(../../assets/icon/people.png);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+        &Content{
+            position: absolute;
+            padding: 38px 15px;
+            width: 1200px;
+            height: 358px;
+            background: #1D1A1D;
+            &Wrapper{
+                display: flex;
+                justify-content: space-around;
+                gap: 80px;
+                width: 1170px;
+                height: 260px;
+            }
+        }
+        &Button{
+            position: absolute;
+            left: 380px;
+            bottom: -30px;
+            width: 137px;
+            height: 40px;
+            cursor: pointer;
+            padding: 15px 12px;
+            text-align: center;
+            width: 180px;
+            height: 53px;
+            font-family: OxaniumMedium;
+            font-size: 16px;
+            color: #FFFFFF;
+            background: linear-gradient(90deg, #81CDFA 0%, #3E57CD 100%);
+            border-radius: 100px;
+            border-style: none;
+            outline: 10px solid #141010;
+            outline-offset: 0px;
+            margin-left: 140px;
+            margin-top: 21px;
+            &:hover{
+                box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+            }
+            &_purple{
+                background: linear-gradient(90deg, #F773F0 0%, #A520B2 100%);
+            }
+            &_yellow{
+                background: linear-gradient(90deg, #E9AE51 0%, #905637 100%);
+            }
+        }
+        &_purple{
+            background: #6B1D7F;
+            margin-top: 108px;
+        }
+        &_yellow{
+            background: #724F30;
+            margin-top: 108px;
+        }
+    }
+}
+
+
+
+
+
+
+

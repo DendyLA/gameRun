@@ -1,0 +1,386 @@
+.crashGame{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 72px;
+    &__game{
+        grid-area: 1 / 1 / 2 / 4;
+        display: inline-block;
+        width: 700px;
+        height: 409px;
+        background: rgba(44, 44, 44, 0.5);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        padding: 0px 25px;
+        &Activity.active{
+            background-image: url(../../../assets/img/crashImg/gameBg.png);
+        }
+        &Activity{
+            position: relative;
+            width: 660px;
+            height: 260px;
+            background: #000000;
+            background-image: url(../../../assets/img/crashImg/gameBgRed.png);
+            border: 1px solid #00FF38;
+            box-shadow: 4px 4px 10px rgba(0, 255, 56, 0.5);
+            border-radius: 30px;
+            margin: 20px auto;
+            padding: 10px;
+            overflow: hidden;
+            
+            &Counter{
+                font-family: OxaniumXBold;
+                font-size: 30px;
+                color: #FFFFFF;
+            }
+            &Descr{
+                font-family: OxaniumMedium;
+                font-size: 20px;
+                color: #00FF38;
+                margin-top: 5px;
+            }
+            &Img{
+                position: absolute;
+                bottom: -90px; /* Начинаем изображение с нижней части родителя */
+                left: 0;
+                width: 658px; /* Ширина изображения */
+                height: 110px; /* Высота изображения */
+            }
+            &Runner{
+                position: absolute;
+                bottom: -200px;
+                left: 500px;
+                width: 100%;
+                height: 100%;
+            }
+            .backgroundActive{
+                background-image: url(../../../assets/img/crashImg/runner.png);
+                background-repeat: no-repeat;
+            }
+            .backgroundInactive{
+                background-image: url(../../../assets/img/crashImg/runnerDown.png);
+                background-repeat: no-repeat;
+            }
+        }
+        &Info span{
+            font-family: OxaniumSBold;
+            font-size: 16px;
+            color: #00FF38;
+        }
+        &Info{
+            margin-top: 20px;
+            font-family: OxaniumSBold;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-left: 5px;
+            display: flex;
+            justify-content: space-around;
+
+            &Money{
+                position: relative;
+                &::before{
+                    content:url(../../../assets/icon/crushGame/money.png);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+            &Users{
+                position: relative;
+                &::before{
+                    content:url(../../../assets/icon/crushGame/people.png);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+            &Skins{
+                position: relative;
+                &::before{
+                    content:url(../../../assets/icon/crushGame/gun.png);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &LastX{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            
+            &Item{
+                cursor: pointer;
+                width: 73px;
+                height: 40px;
+                background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+                border-radius: 100px;
+                font-family: OxaniumBold;
+                font-size: 16px;
+                padding: 10px 15px;
+                color: #FFFFFF;
+            }
+            //Будут рандомные цвета надо удалить этот код
+            &Item:nth-child(2){
+                background: linear-gradient(90deg, #FF9900 0%, #FFE600 100%);
+            }
+            &Item:nth-child(3){
+                background: linear-gradient(90deg, #007E1C 0%, #00C52B 100%);
+            }
+            &Item:nth-child(4){
+                background: linear-gradient(90deg, #8700DA 0%, #DB00FF 100%);
+            }
+            &Item:nth-child(5){
+                background: linear-gradient(90deg, #3300FF 0%, #0094FF 100%);
+            }
+            &Item:nth-child(6){
+                background: linear-gradient(90deg, #007E1C 0%, #00C52B 100%);
+            }
+            &Item:nth-child(8){
+                background: linear-gradient(90deg, #007E1C 0%, #00C52B 100%);
+            }
+        }
+    }
+    &__bid{
+        grid-area: 1 / 4 / 2 / 6;
+        background: #201E1E;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        height: 409px;
+        width: 470px;
+        border-radius: 30px;
+        &Header{
+            width: 470px;
+            height: 186px;
+            background: linear-gradient(180deg, #FF2500 0%, #1D1A1D 100%);
+            border-radius: 30px 30px 0px 0px;
+            padding: 10px 45px;
+        }
+        &Content{
+            padding: 10px 20px;
+        }
+        &Title{
+            font-family: OxaniumMedium;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &Info{
+            margin-top: 10px;
+            width: 430px;
+            height: 40px;
+            background: #4A484A;
+            border: 1px solid #BABABA;
+            border-radius: 100px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            &Count{
+                font-family: OxaniumBold;
+                font-size: 16px;
+                color: #FFFFFF;
+                &::before{
+                    content: 'X';
+                    font-family: OxaniumBold;
+                    font-size: 16px;
+                    color: #BABABA;
+                    margin-right: 10px;
+                }
+            }
+            &Icon{
+                cursor: pointer;
+                
+            }
+        }
+        &X{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+            &Item{
+                cursor: pointer;
+                padding: 10px 20px;
+                width: 73px;
+                height: 40px;
+                background: #4A484A;
+                border-radius: 100px;
+                font-family: OxaniumBold;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+                margin-right: 10px;
+                &:hover{
+                    background: linear-gradient(90.67deg, #FE5839 0.58%, #E3261E 96.08%);
+                }
+            }
+        }
+        &Descr{
+            width: 356px;
+            height: 20px;
+            font-family: OxaniumMedium;
+            font-size: 16px;
+            color: #BABABA;
+            margin: 20px auto 0 auto;
+        }
+        &Button{
+            cursor: pointer;
+            padding: 10px 12px;
+            width: 180px;
+            height: 53px;
+            font-family: OxaniumMedium;
+            font-size: 16px;
+            color: #FFFFFF;
+            background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+            border-radius: 100px;
+            border-style: none;
+            outline: 10px solid #141010;
+            outline-offset: 0px;
+            margin-left: 140px;
+            margin-top: 21px;
+            &:hover{
+                box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+            }
+        }
+    }
+    &__inventory{
+        grid-area: 2 / 1 / 3 / 6;
+        width: 1200px;
+        height: 218px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #00FF38;
+        border-radius: 30px;
+        padding: 20px;
+        &Wrapper{
+            display: flex;
+            justify-content: space-around;
+        }
+        &Title{
+            font-family: OxaniumXBold;
+            font-size: 20px;
+            color: #FFFFFF;
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        &Activity{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 15px; 
+            width: 270px;
+            height: 140px;
+            margin-top: 13px;
+            &Total{
+                width: 130px;
+                height: 68px;
+                background: rgba(74, 72, 74, 0.5);
+                border: 1px solid #00FF38;
+                border-radius: 10px;
+                padding: 15px 10px;
+                grid-area: 2 / 1 / 3 / 2;
+                &Balance{
+                font-family: OxaniumXBold;
+                font-size: 16px;
+                color: #FFFFFF;
+                }
+                &Descr{
+                    font-family: OxaniumMedium;
+                    font-size: 9px;
+                    color: #FFFFFF;
+                    margin-top: 10px;
+                }
+            }
+            &Selected{
+                width: 130px;
+                height: 68px;
+                background: rgba(74, 72, 74, 0.5);
+                border: 1px solid #FF4343;
+                border-radius: 10px;
+                padding: 15px 10px;
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            &Market{
+                width: 130px;
+                height: 53px;
+                background: linear-gradient(90deg, #00811C 0%, #00D72F 100%);
+                border-radius: 10px;
+                border-style: none;
+                grid-area: 3 / 1 / 4 / 2;
+                &:hover{
+                    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+                }
+            }
+            &Take{
+                width: 130px;
+                height: 53px;
+                background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+                border-radius: 10px;
+                border-style: none;
+                grid-area: 3 / 2 / 4 / 3;
+                &:hover{
+                    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+                }
+            }
+        }
+        &Items{
+            display: flex;
+            margin-left: 10px;
+        }
+        &Item{
+            width: 140px;
+            height: 176px;
+            &Main{
+                width: 140px;
+                height: 115px;
+                background: rgba(74, 72, 74, 0.5);
+                border: 1px solid #FF4343;
+                border-radius: 10px;
+                padding: 32px 37px;
+            }
+            &Add{
+                width: 30px;
+                height: 30px;
+                background: #BABABA;
+                border-radius: 100%;
+                padding: 10px;
+                margin: 0 auto;
+                &:hover{
+                    background: #dbdbdb;
+                }
+                &Icon{
+                    height: 10px;
+                    width: 10px;
+                    background-image: url(../../../assets/icon/crushGame/add.png);
+                    margin: 0 auto;
+                }
+            }
+            &Descr{
+                font-family: OxaniumSBold;
+                font-size: 9px;
+                color: #BABABA;
+                margin-top: 10px;
+            }
+            &Button{
+                width: 140px;
+                height: 53px;
+                background: rgba(74, 72, 74, 0.5);
+                border-radius: 10px;
+                padding: 13px 25px;
+                margin-top: 8px;
+                &:hover{
+                    background: rgba(119, 116, 119, 0.5);
+                }
+            }
+            &Title{
+                font-family: OxaniumSBold;
+                font-size: 9px;
+                color: #BABABA;
+            }
+            &Cost{
+                font-family: OxaniumSBold;
+                font-size: 9px;
+                color: #BABABA;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
+    
+}

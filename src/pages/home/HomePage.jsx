@@ -29,7 +29,7 @@ function HomePage() {
             <div className="games__line"></div>
             <div className="games">
                 <Link to="/crash"><Game photo={CrashPhoto} name='Crash' statistic={272} available={true}/></Link>
-                <Game photo={Double} name='Double' statistic={126} available={true}/>
+                <Link to='/double'><Game photo={Double} name='Double' statistic={126} available={true}/></Link> 
                 <Game photo={Jackrun} name='Jackrun' statistic={28} available={true}/>
                 <Game photo={RollRun} name='RollRun' statistic={52} available={true}/>
                 <Game photo={Cases} name='Cases' statistic={''} available={false}/>

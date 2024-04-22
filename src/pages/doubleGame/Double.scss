@@ -1,0 +1,23 @@
+.title{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 28px;
+    font-family: OxaniumC;
+    font-size: 60px;
+    color: #FFFFFF; //!!!!!!!!!!!!Font is another
+    &::after{
+        content: '';
+        display: inline-block;
+        width: 705px;
+        height: 1px;
+        background: #DB442A;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 380px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        
+    }
+}

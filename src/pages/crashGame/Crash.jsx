@@ -13,21 +13,21 @@ function Crush() {
             <GameCrash />
             <div className="crash__title_user">СТАВКИ ИГРОКОВ</div>
             <div className="users">
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
-            <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
+                <UsersBid />
             </div>
         </div>
         </section>

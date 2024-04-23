@@ -1,5 +1,17 @@
 .jackrun{
     &__title{
         font-family: OxaniumSBold;
+        &_user{
+            &::after{
+                width: 639px;
+                left: 520px;
+            }
+        }
+    }
+    &__users{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 87px;
     }
 }

@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect, useRef } from 'react'
 
 import './GameJackrun.scss'
 
@@ -6,6 +6,7 @@ import userPhoto from '../../../assets/img/crashImg/user.png'
 import userIcon from '../../../assets/img/profile/user.png'
 
 function GameJackrun() {
+    
 
     return(
         <div className="jackrun__wrapper">
@@ -21,6 +22,9 @@ function GameJackrun() {
                         <div className="jackrun__gameActivityRollUser"><img src={userPhoto} alt="" /> </div>
                         <div className="jackrun__gameActivityRollUser"><img src={userPhoto} alt="" /> </div>
                         <div className="jackrun__gameActivityRollUser"><img src={userPhoto} alt="" /> </div>
+                        <div className="jackrun__gameActivityRollUser"><img src={userPhoto} alt="" /> </div>
+                        <div className="jackrun__gameActivityRollUser"><img src={userPhoto} alt="" /> </div>
+                        {/* <div className="jackrun__gameActivityRollWinner"></div> */}
                     </div>
                 </div>
                 <div className="jackrun__gameInfo">
@@ -35,19 +39,27 @@ function GameJackrun() {
                 </div>
             </div>
             <div className="jackrun__bid">
-                <div className="jackrun__bidWrapper"></div>
-                <div className="jackrun__bidTitle">Удача дня</div>
-                <div className="jackrun__bidDescr">Самый крупный выигрыш</div>
-                <div className="jackrun__bidCost">10.00</div>
-                <div className="jackrun__bidUser">
-                    <div className="jackrun__bidUserIcon"><img src={userIcon} alt="" /> </div>
-                    <div className="Jackrun__bidUserInfo">
-                        <div className="jackrun__bidUserName">EnOTiK Play</div>
-                        <div className="jackrun__bidUserPoint">39.83</div>
+                <div className="jackrun__bidInfo">
+                    <div className="jackrun__bidWrapper"></div>
+                    <div className="jackrun__bidTitle">Удача дня</div>
+                    <div className="jackrun__bidDescr">Самый крупный выигрыш</div>
+                    <div className="jackrun__bidCost">10.00</div>
+                    <div className="jackrun__bidUser">
+                        <div className="jackrun__bidUserIcon"><img src={userIcon} alt="" /> </div>
+                        <div className="Jackrun__bidUserInfo">
+                            <div className="jackrun__bidUserName">EnOTiK Play</div>
+                            <div className="jackrun__bidUserPoint">39.83</div>
+                        </div>
                     </div>
                 </div>
                 <div className="jackrun__bidMain">
-                    
+                    <div className="jackrun__bidMainTitle">ВАША СТАВКА В ТЕКУЩЕМ РАУНДЕ</div>
+                    <div className="jackrun__bidMainCountWrapper">
+                        <div className="jackrun__bidMainCount">0.00</div>{/*inputs must be*/}
+                    </div>
+                    <div className="jackrun__bidMainPercentWrapper">
+                        <div className="jackrun__bidMainPercent">0.00%</div>{/*inputs must be */}
+                    </div>
                     <div className="jackrun__bidMainButton">СДЕЛАТЬ СТАВКУ</div>
                 </div>
             </div>

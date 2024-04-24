@@ -1,0 +1,196 @@
+.rollrun__game{
+    &Activity{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        height: 125px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FF0000;
+        border-radius: 30px;
+        padding: 28px 20px;
+        
+        &Choice{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            &Button{
+                width: 180.54px;
+                height: 53px;
+                background: linear-gradient(90deg, #FE583A 0%, #E3271E 100%);
+                box-shadow: 2px 2px 5px #000000;
+                border-radius: 100px;
+                border-style: none;
+                font-family: OxaniumSBold;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                align-self: center;
+                &:hover{
+                    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+                }
+            }
+        }
+        &Create{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            &User{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                &::before{
+                    content: url(../../../assets/icon/people.png);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    width: 30px;
+                    height: 30px;
+                }
+                &Descr{
+                    position: relative;
+                    font-family: OxaniumMedium;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    width: 140px;
+                    height: 40px;
+                    text-align: center;
+                }
+                &Count{
+                    cursor: pointer;
+                    width: 53px;
+                    height: 53px;
+                    background: linear-gradient(90deg, #FE5839 0%, #E2261E 100%);
+                    box-shadow: 2px 2px 5px #000000;
+                    border-radius: 100px;
+                    font-family: OxaniumSBold;
+                    font-size: 30px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 8px 17px;
+                    opacity: 0.5;
+                    &.Active{
+                        opacity: 1;
+                    }
+                }
+            }
+            &Button{
+                width: 207.59px;
+                height: 53px;
+                background: linear-gradient(90deg, #FE583A 0%, #E2261E 100%);
+                box-shadow: 2px 2px 5px #000000;
+                border-radius: 100px;
+                border-style: none;
+                font-family: OxaniumSBold;
+                font-size: 16px;
+                color: #FFFFFF;
+                & span{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+    &Quest{
+        margin-top: 72px;
+        position: relative;
+        width: 1200px;
+        height: 125px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FF0000;
+        border-radius: 30px;
+        overflow: hidden;
+        padding-right: 20px;
+        &Img{
+            position: absolute;
+            top: 0;
+            width: 160.12px;
+        }
+        &Content{   
+            margin-left: 160px;
+            display: flex;
+            justify-content: space-between;
+            
+            &Left{
+                margin-top: 8px;
+                &Title{
+                    font-family: OxaniumSBold;
+                    font-size: 20px;
+                    color: #FFFFFF;
+
+                    
+                }
+                &Descr{
+                    font-family: OxaniumMedium;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    margin-top: 5px;
+                }
+                &Counter{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    margin-top: 10px;
+                    &Num{
+                        width: 53px;
+                        height: 53px;
+                        background: linear-gradient(180deg, #BDCAF6 0%, #9D21B7 46.5%, #1B0C54 100%);
+                        box-shadow: 2px 2px 5px #000000;
+                        border-radius: 100px;
+                        padding: 14px 10px;
+                        font-family: OxaniumSBold;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                    &Info{
+                        width: 367px;
+                        height: 53px;
+                        background: linear-gradient(90deg, #BED8FA 0%, #A823C0 43%, #110A4C 100%);
+                        box-shadow: 2px 2px 5px #000000;
+                        border-radius: 100px;
+                        font-family: OxaniumSBold;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        padding: 17px 19px;
+                    }
+                }
+            }
+            &Right{
+                display: flex;
+                justify-content: space-between;
+                gap: 22px;
+                &Prize{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    align-self: center;
+                    &Icon{
+                        width: 53px;
+                        height: 53px;
+                        background: linear-gradient(180deg, #BDCAF6 0%, #9D21B7 46.5%, #1B0C54 100%);
+                        box-shadow: 2px 2px 5px #000000;
+                        border-radius: 100px;
+                        padding: 9px 12px;
+                    }
+                    &Descr{
+                        
+                        &Top{
+                            font-family: OxaniumMedium;
+                            font-size: 16px;
+                            color: #FFFFFF;
+                        }
+                        &Bottom{
+                            font-family: OxaniumSBold;
+                            font-size: 20px;
+                            color: #FFFFFF;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -36,7 +36,7 @@ function HomePage() {
                 <Link to="/crash"><Game photo={CrashPhoto} name='Crash' statistic={272} available={true}/></Link>
                 <Link to='/double'><Game photo={DoublePhoto} name='Double' statistic={126} available={true}/></Link> 
                 <Link to='/jackrun'><Game photo={JackrunPhoto} name='Jackrun' statistic={28} available={true}/></Link> 
-                <Game photo={RollRun} name='RollRun' statistic={52} available={true}/>
+                <Link to='/rollrun'><Game photo={RollRun} name='RollRun' statistic={52} available={true}/></Link> 
                 <Game photo={Cases} name='Cases' statistic={''} available={false}/>
                 <Game photo={NextGame} name='Next game' statistic={''} available={false}/>
             </div>

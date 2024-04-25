@@ -1,0 +1,146 @@
+.userMain{
+
+    &__info{
+        width: 1200px;
+        height: 218px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FF0000;
+        border-radius: 30px;
+        padding: 20px;
+        &Top{
+            display: flex;
+            justify-content: space-between;
+            &Buttons{
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+            &User{
+                display: flex;
+                justify-content: flex-start;
+                gap: 15px;
+                &Img{
+                    width: 70px;
+                    height: 70px;
+                    background: rgba(0, 255, 26, 0.5);
+                    border-radius: 100px;
+                }
+                &Name{
+                    font-family: OxaniumMedium;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    align-self: center;
+                }
+            }
+            &Id{
+                cursor: pointer;
+                width: 189px;
+                height: 70px;
+                background: #2F2C2C;
+                border-radius: 20px;
+                padding: 22px 20px;
+                &Descr{
+                    font-family: OxaniumSBold;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    &::after{
+                        content: url(../../../assets/img/userCab/copy.png);
+                        width: 23px;
+                        height: 23px;
+                        margin-left: 12px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &Notification{
+                cursor: pointer;
+                width: 81px;
+                height: 70px;
+                background: #2F2C2C;
+                border-radius: 20px;
+                padding: 15px 23px;
+            }
+            &Exit{
+                cursor: pointer;
+                width: 81px;
+                height: 70px;
+                background: #2F2C2C;
+                border-radius: 20px;
+                padding: 15px 26px;
+            }
+        }
+        &Bottom{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 38px;
+            &Trade{
+                padding: 11px 20px;
+                width: 570px;
+                height: 70px;
+                background: #2F2C2C;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                &Link{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 15px;
+                    &Icon{
+                        padding: 12px 11px;
+                        width: 48px;
+                        height: 48px;
+                        background: linear-gradient(90deg, #FE5839 0%, #E2261E 100%);
+                        border-radius: 100px;
+                    }
+                    &Descr{
+                        width: 197px;
+                        height: 25px;
+                        font-family: OxaniumSBold;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        align-self: center;
+                    }
+                }
+                &Danger{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 5px;
+                    &Descr{
+                        width: 87px;
+                        height: 25px;
+                        font-family: 'Oxanium';
+                        font-size: 20px;
+                        color: #F54630;
+                        align-self: center;
+                    }
+                }
+            }
+            &Exit{
+                cursor: pointer;
+                width: 391px;
+                height: 70px;
+                background: #2F2C2C;
+                border-radius: 20px;
+                display: flex;
+                justify-content: flex-start;
+                gap: 13px;
+                padding: 11px 20px;
+                &Icon{
+                    width: 48px;
+                    height: 48px;
+                    background: linear-gradient(90deg, #FE5839 0%, #E2261E 100%);
+                    border-radius: 100px;
+                    padding: 14px 14px;
+                }
+                &Descr{
+                    align-self: center;
+                    font-family: 'Oxanium';
+                    font-size: 20px;
+                    color: #F54630;
+                }
+            }
+        }
+    }
+}

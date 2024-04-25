@@ -32,7 +32,6 @@ function HomePage() {
             <div className="games__title">Режимы</div>
             <div className="games__line"></div>
             <div className="games">
-
                 <Link to="/crash"><Game photo={CrashPhoto} name='Crash' statistic={272} available={true}/></Link>
                 <Link to='/double'><Game photo={DoublePhoto} name='Double' statistic={126} available={true}/></Link> 
                 <Link to='/jackrun'><Game photo={JackrunPhoto} name='Jackrun' statistic={28} available={true}/></Link> 

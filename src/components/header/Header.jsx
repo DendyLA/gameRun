@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './Header.scss'
 
 function Header(){
@@ -8,7 +10,7 @@ function Header(){
                 <div className="header__wrapper">
                     <div className="logo">Logo <span>Game</span></div> 
                     <nav className="nav">
-                        <a href="" className="nav__item">Главная</a>
+                        <Link to='/usercab'><a href="" className="nav__item">Главная</a></Link> 
                         <a href="" className="nav__item">Режимы</a>
                         <a href="" className="nav__item">Контакты</a>
                         <a href="" className="nav__item">Помощь</a>

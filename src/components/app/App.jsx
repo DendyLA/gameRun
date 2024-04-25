@@ -9,6 +9,7 @@ import Crash from '../../pages/crashGame/Crash'
 import Double from '../../pages/doubleGame/Double'
 import Jackrun from '../../pages/jackrunGame/Jackrun'
 import Rollrun from '../../pages/rollrunGame/Rollrun'
+import UserCab from '../../pages/userCab/UserCab'
 
 function App() {
 
@@ -22,6 +23,7 @@ return (
 					<Route path='/double' element={<Double/>} />
 					<Route path='/jackrun' element={<Jackrun />} />
 					<Route path='/rollrun' element={<Rollrun />} />
+					<Route path='/usercab' element={<UserCab />}/>
 				</Route>
 				
 			</Routes>

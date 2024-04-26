@@ -1,6 +1,12 @@
 .userMain{
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 71px; 
+    margin-top: 25px;
     &__info{
+        grid-area: 1 / 1 / 2 / 6;
         width: 1200px;
         height: 218px;
         background: #201E1E;
@@ -140,6 +146,108 @@
                     font-size: 20px;
                     color: #F54630;
                 }
+            }
+        }
+    }
+    &__promo{
+        grid-area: 2 / 1 / 3 / 3;
+        width: 590px;
+        height: 218px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FF0000;
+        border-radius: 30px;
+        background-image: url(../../../assets/img/userCab/promo.png);
+        background-repeat: no-repeat;
+        padding: 30px 20px 58px 259px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        &Title{
+            font-family: OxaniumSBold;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        &Descr{
+            width: 202px;
+            height: 20px;
+            font-family: Oxanium;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        &Form{
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            & input{
+                width: 248px;
+                height: 50px;
+                background: #2F2C2C;
+                border-radius: 10px;
+                font-family: Oxanium;
+                font-size: 16px;
+                color: #FFFFFF;
+                padding: 15px 91px 15px 61px;
+                margin-top: 30px;
+                border-style: none;
+                background-image: url(../../../assets/img/userCab/ticket.png);
+                background-position: 20px 17px;
+                background-repeat: no-repeat;
+            }
+            & button{
+                width: 53px;
+                height: 53px;
+                background: linear-gradient(90deg, #FE583A 0%, #E2261E 100%);
+                box-shadow: 2px 2px 5px #000000;
+                border-radius: 100px;
+                border-style: none;
+                padding: 19px 16px;
+                align-self: flex-end;
+                &:hover{
+                    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+    &__balance{
+        grid-area: 2 / 3 / 3 / 5;
+        width: 590px;
+        height: 218px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FF0000;
+        border-radius: 30px;
+        background-image: url(../../../assets/img/userCab/moneyBag.png);
+        background-repeat: no-repeat;
+        background-position: 300px 0;
+        padding: 20px;
+        &Count{
+            width: 52px;
+            height: 25px;
+            font-family: OxaniumSBold;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        &Descr{
+            font-family: Oxanium;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-top: 5px;
+        }
+        &Button{
+            cursor: pointer;
+            width: 207.59px;
+            height: 53px;
+            background: linear-gradient(90deg, #FE583A 0%, #E2261E 100%);
+            box-shadow: 2px 2px 5px #000000;
+            border-radius: 100px;
+            padding: 17px;
+            text-align: center;
+            font-family: OxaniumSBold;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-top: 40px;
+            &:hover{
+                box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
             }
         }
     }

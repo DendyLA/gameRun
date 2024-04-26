@@ -1,0 +1,58 @@
+.market{
+
+    &__changer{
+
+        &Item{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            height: 64px;
+            width: 279px;
+            background: linear-gradient(90deg, rgba(166, 55, 65, 0.7) 0%, rgba(183, 50, 62, 0.14) 100%);
+            opacity: 0.3;
+            border-radius: 12px;
+            margin-top: 6px;
+            padding-left: 21px;
+            &.active{
+                background: linear-gradient(90deg, rgba(193, 122, 94, 0.7) 0%, rgba(153, 88, 69, 0.35) 100%);
+                opacity: 1;
+            }
+            &Descr{
+                font-family: OxaniumSBold;
+                font-size: 12px;
+                color: #FF7D7D;
+                align-self: center;
+            }
+        }
+        &DotaDescr{
+            &::before{
+                content: url(../../../assets/img/market/dotaIcon.png);
+                display: inline-block;
+                vertical-align: middle;
+                width: 22px;
+                height: 22px;
+                margin-right: 20px;
+            }
+        }
+        &CsDescr{
+            &::before{
+                content: url(../../../assets/img/market/csIcon.png);
+                display: inline-block;
+                vertical-align: middle;
+                width: 36px;
+                height: 36px;
+                margin-right: 12px;
+            }
+        }
+        &RustDescr{
+            &::before{
+                content: url(../../../assets/img/market/rustIcon.png);
+                display: inline-block;
+                vertical-align: middle;
+                width: 22px;
+                height: 22px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

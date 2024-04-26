@@ -8,6 +8,7 @@ import door from '../../../assets/img/userCab/door.png'
 import link from '../../../assets/img/userCab/link.png'
 import danger from '../../../assets/img/userCab/danger.png'
 import no from '../../../assets/img/userCab/no.png'
+import approve from '../../../assets/img/userCab/approve.png'
 
 function UserMain() {
 
@@ -43,8 +44,21 @@ function UserMain() {
                     </div>
                 </div>
             </div>
-            <div className="userMain__promo"></div>
-            <div className="userMain__Balance"></div>
+            <div className="userMain__promo">
+                <div className="userMain__promoTitle">Промо-код</div>
+                <div className="userMain__promoDescr">Специальный / Обычный</div>
+                <form action="" className="userMain__promoForm">
+                <label >
+                    <input type="text"  placeholder='Введите код'/>
+                </label>
+                    <button><img src={approve} alt="" /> </button>
+                </form>
+            </div>
+            <div className="userMain__balance">
+                <div className="userMain__balanceCount">0.00$</div>
+                <div className="userMain__balanceDescr">Баланс аккаунта</div>
+                <div className="userMain__balanceButton">ПОПОЛНИТЬ</div>
+            </div>
         </div>
     )
 }

@@ -4,3 +4,34 @@
         left: 250px;
     }
 }
+.transaction__title{
+    &::after{
+        width: 810px;
+        left: 250px;
+    }
+}
+
+.usercab{
+    &__transaction{
+        max-width: 1200px;
+        height: 250px;
+        background: #201E1E;
+        box-shadow: 4px 4px 10px #FFFFFF;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        & img{
+            width: 25px;
+            height: 25.09px;
+            margin: 0 auto;
+        }
+        &Descr{
+            font-family: OxaniumXBold;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+    }
+}

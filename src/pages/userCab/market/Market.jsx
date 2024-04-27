@@ -5,6 +5,8 @@ import './Market.scss'
 import dotaPers from '../../../assets/img/market/dotaPers.png'
 import csPers from '../../../assets/img/market/csPers.png'
 import rustPers from '../../../assets/img/market/rustPers.png'
+import withdraw from '../../../assets/img/market/withdraw.png'
+import setting from '../../../assets/img/market/setting.png'
 
 function Market(){
     let [activeItem, setActiveItem] = useState('market__changerCs')
@@ -28,8 +30,56 @@ function Market(){
                     <img src={rustPers} alt="" />
                 </div>
             </div>
-            <div className="market__sale"></div>
-            <div className="market__skins"></div>
+            <div className="market__sale">
+                <div className="market__saleTitle">Skin Swap & Purchase Information</div>
+                <div className="market__saleSkin">
+                    <div className="market__saleSkinDescr">Skins selected</div>
+                    <div className="market__saleSkinCount">0</div>
+                </div>
+                <div className="market__saleBalance">
+                    <div className="market__saleBalanceCount">0.00$</div>
+                    <div className="market__saleBalanceDescr">Balance after exchange</div>
+                </div>
+                <div className="market__saleBalance">
+                    <div className="market__saleBalanceCount">0.00$</div>
+                    <div className="market__saleBalanceDescr">Selected skins in the market</div>
+                </div>
+                <div className="market__saleButton">
+                    <img src={withdraw} alt="" />
+                    <div className="market__saleButtonDescr">SALE</div>
+                </div>
+            </div>
+            <div className="market__skins">
+                <div className="market__skinsHeader">
+                    <input type="text" className="market__skinsHeaderSearch" placeholder='Name' />
+                    <div className="market__skinsHeaderPrice">Max. price <span>$</span> </div>
+                    <div className="market__skinsHeaderCount">0.25$</div>
+                    <div className="market__skinsHeaderCount">1.00$</div>
+                    <div className="market__skinsHeaderCount">5.00$</div>
+                    <div className="market__skinsHeaderCount">10.00$</div>
+                    <div className="market__skinsHeaderSetting"><img src={setting} alt="" /> </div>
+                </div>
+                <div className="market__skinsContent">
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                    <div className="market__skinsContentItem"></div>
+                </div>
+            </div>
         </div>
     )
 }

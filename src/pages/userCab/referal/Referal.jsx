@@ -12,7 +12,8 @@ import percent from '../../../assets/img/market/percent.png'
 function Referal() {
 
     return(
-        <div className="referal">
+        <>
+            <div className="referal">
             <div className="referal__level">
                 <div className="referal__levelNum">1</div>
                 <div className="referal__levelTitle">УРОВЕНЬ</div>
@@ -57,7 +58,59 @@ function Referal() {
                     <div className="referal__infoBalanceButton">ОБМЕНЯТЬ</div>
                 </div>
             </div>
+            
         </div>
+        
+        <div className="title ref__title">Уровни реф. системы</div>
+            <div className="ref__levels">
+                <div className="ref__levelsHeader">
+                    <div className="ref__levelsHeaderLeft">
+                        <div className="ref__levelsHeaderDescr">УРОВЕНЬ</div>
+                        <div className="ref__levelsHeaderDescr">ПОПОЛНЕНИЙ РЕФЕРАЛАМИ</div>
+                    </div>
+                    <div className="ref__levelsHeaderRight">
+                        <div className="ref__levelsHeaderDescr">ПРОЦЕНТ ОТ ПОПОЛНЕНИЙ</div>
+                        <div className="ref__levelsHeaderDescr">РЕФЕРАЛ ПОЛУЧИТ</div>
+                    </div>
+                </div>
+                <div className="ref__levelsContent">
+                    <div className="ref__levelsContentItem">
+                        <div className="ref__levelsContentItemNum">1</div>
+                        <div className="ref__levelsContentItemMoney">0.00$</div>
+                        <div className="ref__levelsContentItemPercent">1%</div>
+                        <div className="ref__levelsContentItemDeposite">5% к депозиту</div>
+                    </div>
+                    <div className="ref__levelsContentItem">
+                        <div className="ref__levelsContentItemNum">2</div>
+                        <div className="ref__levelsContentItemMoney">200.00$</div>
+                        <div className="ref__levelsContentItemPercent">2%</div>
+                        <div className="ref__levelsContentItemDeposite">5% к депозиту</div>
+                    </div>
+                    <div className="ref__levelsContentItem">
+                        <div className="ref__levelsContentItemNum">3</div>
+                        <div className="ref__levelsContentItemMoney">500.00$</div>
+                        <div className="ref__levelsContentItemPercent">3%</div>
+                        <div className="ref__levelsContentItemDeposite">5% к депозиту</div>
+                    </div>
+                    <div className="ref__levelsContentItem">
+                        <div className="ref__levelsContentItemNum">4</div>
+                        <div className="ref__levelsContentItemMoney">1500.00$</div>
+                        <div className="ref__levelsContentItemPercent">4%</div>
+                        <div className="ref__levelsContentItemDeposite">5% к депозиту</div>
+                    </div>
+                    <div className="ref__levelsContentItem">
+                        <div className="ref__levelsContentItemNum">5</div>
+                        <div className="ref__levelsContentItemMoney">3000.00$</div>
+                        <div className="ref__levelsContentItemPercent">5%</div>
+                        <div className="ref__levelsContentItemDeposite">5% к депозиту</div>
+                    </div>
+                </div>
+            </div>
+            <div className="title">Пользователи</div>
+            <div className="ref__users">
+
+            </div>
+        </>
     )
 }
 

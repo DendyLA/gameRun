@@ -16,8 +16,8 @@ function Header(){
                         <a href="" className="nav__item">Помощь</a>
                     </nav>
                     <div className="authentication">
-                        <button className="log-in">Войти</button>
-                        <button className="sign-up">Зарегистрироваться</button>
+                        <Link to='/signin'><button className="log-in">Войти</button></Link> 
+                        <Link to='/login'><button className="sign-up">Зарегистрироваться</button></Link> 
                     </div>
                 </div>
             </div>

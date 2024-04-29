@@ -1,5 +1,11 @@
 .referal{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
     &__level{
+        grid-area: 1 / 1 / 3 / 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,6 +51,7 @@
         }
     }
     &__link{
+        grid-area: 1 / 2 / 2 / 6;
         padding: 20px;
         display: flex;
         justify-content: flex-start;
@@ -106,6 +113,7 @@
         }
     }
     &__info{
+        grid-area: 2 / 2 / 3 / 6;
         display: flex;
         justify-content: flex-start;
         &Item{
@@ -159,4 +167,94 @@
             }
         }
     }
+    .ref__title{
+        width: 678px;
+        &::after{
+            width: 512px;
+            left: 600px;
+        }
+    }
+}
+
+.ref__levels{
+    max-width: 1200px;
+    height: 490px;
+    background: #201E1E;
+    box-shadow: 4px 4px 10px #FFFFFF;
+    border-radius: 30px;
+    padding: 20px;
+    &Header{
+        display: flex;
+        justify-content: space-between;
+        &Descr{
+            font-family: OxaniumSBold;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        &Left{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        &Right{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+    }
+    &Content{
+        margin-top: 20px;
+        &Item{
+            margin-top: 20px;
+            padding: 7px 20px;
+            width: 1160px;
+            height: 65px;
+            background: #2F2C2C;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-between;
+            &Num{
+                height: 50px;
+                width: 50px;
+                padding: 13px 19px;
+                background: #201E1E;
+                border: 1px dashed #FFFFFF;
+                border-radius: 100px;
+                font-family: OxaniumSBold;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+            &Money{
+                font-family: OxaniumSBold;
+                font-size: 20px;
+                color: #FFFFFF;
+                margin-right: 456px;
+                align-self: center;
+                margin-left: -100px;
+                
+            }
+            &Percent{
+                font-family: OxaniumSBold;
+                font-size: 20px;
+                color: #FFFFFF;
+                // margin-left: 520px;
+                align-self: center;
+            }
+            &Deposite{
+                font-family: OxaniumSBold;
+                font-size: 20px;
+                color: #FFFFFF;
+                // margin-left: 273px;
+                align-self: center;
+            }
+        }
+    }
+}
+
+.ref__users{
+    width: 1200px;
+    height: 250px;
+    background: #201E1E;
+    box-shadow: 4px 4px 10px #FFFFFF;
+    border-radius: 30px;
 }

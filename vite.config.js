@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://dendyla.github.io/game-run/'
 })
 
 // https://dendyla.github.io/gameRun/

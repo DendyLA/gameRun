@@ -97,90 +97,93 @@ function GameDouble() {
                             <button className="double__inventoryActivityMarket">МАРКЕТ</button>
                             <button className="double__inventoryActivityTake">ВЫВЕСТИ</button>
                         </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
+                        <div className="double__inventoryItemsWrapper">
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
                                     </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">0.25$</div>
+                                    </div>
                                 </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">0.25$</div>
+                            </div>
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    </div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">1.00$</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    </div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">5.00$</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    </div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">10.00$</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    </div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">0.25$</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="double__inventoryItems">
+                                <div className="double__inventoryItem">
+                                    <div className="double__inventoryItemMain">
+                                        <div className="double__inventoryItemAdd">
+                                            <div className="double__inventoryItemAddIcon"></div>
+                                        </div>
+                                        <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
+                                    </div>
+                                    <div className="double__inventoryItemButton">
+                                        <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
+                                        <div className="double__inventoryItemCost">0.25$</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
-                                    </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
-                                </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">1.00$</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
-                                    </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
-                                </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">5.00$</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
-                                    </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
-                                </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">10.00$</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
-                                    </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
-                                </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">0.25$</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="double__inventoryItems">
-                            <div className="double__inventoryItem">
-                                <div className="double__inventoryItemMain">
-                                    <div className="double__inventoryItemAdd">
-                                        <div className="double__inventoryItemAddIcon"></div>
-                                    </div>
-                                    <div className="double__inventoryItemDescr">КУПИТЬ СКИН</div>
-                                </div>
-                                <div className="double__inventoryItemButton">
-                                    <div className="double__inventoryItemTitle">БЫСТРАЯ ПОКУПКА</div>
-                                    <div className="double__inventoryItemCost">0.25$</div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
         </div>

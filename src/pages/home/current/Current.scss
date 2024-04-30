@@ -148,3 +148,93 @@
         }
     }
 }
+
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .current{
+        width: 950px;
+        &__image{
+            right: 120px;
+        }
+        &__button{
+            left: 390px;
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .current{
+        width: 740px;
+        &__image{
+            display: none;
+        }
+        &__button{
+            left: 320px;
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .current{
+        width: 400px;
+        margin: 0 auto;
+        &__image{
+            display: none;
+        }
+        &__button{
+            left: 140px;
+        }
+        &__skin{
+            right: -25px;
+            &Name{
+                margin-left: -38px;
+            }
+        }
+        &__skinImg{
+            width: 70.44px;
+            height: 70.44px;
+            
+            img{
+                width: 60.44px;
+            }
+        }
+        .user__playersCount{
+            margin-left: 40px;
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .current{
+        width: 280px;
+
+        margin: 20px auto;
+        &__image{
+            display: none;
+        }
+        &__button{
+            left: 80px;
+        }
+        &__skin{
+            display: none;
+            right: -25px;
+            &Name{
+                margin-left: -38px;
+            }
+        }
+        &__skinImg{
+            width: 70.44px;
+            height: 70.44px;
+            
+            img{
+                width: 60.44px;
+            }
+        }
+        .user__playersCount{
+            margin-left: 40px;
+            display: none;
+        }
+    }
+}

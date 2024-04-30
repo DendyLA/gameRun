@@ -403,3 +403,405 @@
         }
     }
 }
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .double{
+        padding: 20px;
+        &__game{
+            width: 500px;
+            &Activity{
+                background-position: -112px 200px;
+                width: 450px;
+                &Roll{
+                    margin-top: 56px;
+                    &Item{
+                        width: 51px;
+                    }
+                }
+            }
+            &InfoMoney{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+            }
+            &InfoUsers{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+            }
+            &InfoSkins{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__bid{
+            &Jackpot{
+                width: 329px;
+                &Wrapper{
+                    width: 329px;
+                }
+            }
+            &Main{
+                width: 330px;
+                &Info{
+                    &Item{
+                        img{
+                            display: none;
+                        }
+                        &Cost{
+                            width: 60%;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                &Button{
+                    left: 83px
+                }
+            }
+        }
+        &__inventory{
+            width: 900px;
+            overflow: hidden;
+            margin: 0 auto;
+            &Activity{
+                margin-left: 315px;
+            }
+        }
+        &__users{
+            &Content{
+                width: 955px !important;
+            }
+            &Button{
+                left: 234px;
+            }
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .double{
+        padding: 20px;
+        &__game{
+            width: 400px;
+            &Activity{
+                background-position: -165px 200px;
+                width: 350px;
+                overflow: hidden;
+                &Roll{
+                    margin-top: 56px;
+                    margin-left: -22px;
+                    &Item{
+                        width: 51px;
+                    }
+                }
+            }
+            &InfoMoney{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &InfoUsers{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &InfoSkins{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &LastImg{
+                padding: 5px;
+                width: 50px;
+                height: auto;
+            }
+            &LastTitle{
+                font-size: 12px;
+            }
+        }
+        &__bid{
+            &Jackpot{
+                width: 269px;
+                &Wrapper{
+                    width: 269px;
+                }
+                &Icons{
+                    gap: 10px;
+                }
+            }
+            &Main{
+                width: 260px;
+                &Info{
+                    &Item{
+                        img{
+                            display: none;
+                        }
+                        &Cost{
+                            width: 60%;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                &Button{
+                    left: 43px
+                }
+            }
+        }
+        &__inventory{
+            width: 740px;
+            overflow: hidden;
+            margin: 0 auto;
+            &Activity{
+                margin-left: 455px;
+            }
+        }
+        &__users{
+            &Content{
+                width: 729px !important;
+            }
+            &Button{
+                left: 154px !important;
+            }
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .double{
+        padding: 20px;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        &__game{
+            width: 440px;
+            &Activity{
+                background-position: -148px 200px;
+                width: 400px;
+                overflow: hidden;
+                &Roll{
+                    margin-top: 56px;
+                    margin-left: -12px;
+                    &Item{
+                        width: 51px;
+                    }
+                }
+            }
+            &InfoMoney{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &InfoUsers{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &InfoSkins{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+            }
+            &LastImg{
+                padding: 5px;
+                width: 50px;
+                height: auto;
+            }
+            &LastTitle{
+                font-size: 12px;
+            }
+        }
+        &__bid{
+            &Jackpot{
+                width: 449px;
+                &Wrapper{
+                    width: 449px;
+                }
+                &Icons{
+                    gap: 10px;
+                }
+            }
+            &Main{
+                width: 449px;
+                &Info{
+                    &Item{
+                        &Cost{
+                            // width: 60%;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                &Button{
+                    left: 143px
+                }
+            }
+        }
+        &__inventory{
+            width: 440px;
+            overflow: hidden;
+            margin: 0 auto;
+            &Activity{
+                margin-left: 755px;
+            }
+        }
+        &__users{
+            &Content{
+                width: 445px !important;
+                &Wrapper{
+                    gap: 30px;
+                }
+            }
+            &Button{
+                left: 10px !important;
+            }
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .double{
+        padding: 20px;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        &__game{
+            width: 310px;
+            &Activity{
+                background-position: -198px 200px;
+                width: 280px;
+                overflow: hidden;
+                &Roll{
+                    margin-top: 56px;
+                    margin-left: -30px;
+                    &Item{
+                        width: 51px;
+                    }
+                }
+            }
+            &Info{
+                width: 290px;
+                margin-left: -10px;
+            }
+            &InfoMoney{
+                font-size: 9px;
+                span{
+                    font-size: 9px;
+                }
+            }
+            &InfoUsers{
+                font-size: 9px;
+                span{
+                    font-size: 9px;
+                }
+            }
+            &InfoSkins{
+                font-size: 9px;
+                span{
+                    font-size: 9px;
+                }
+            }
+            &LastInfo{
+                width: 45px;
+                padding: 12px;
+                img{
+                    display: none;
+                }
+            }
+            &LastImg{
+                padding: 5px;
+                width: 50px;
+                height: auto;
+            }
+            &LastTitle{
+                font-size: 12px;
+            }
+        }
+        &__bid{
+            &Jackpot{
+                width: 310px;
+                &Wrapper{
+                    width: 310px;
+                }
+                &Icons{
+                    gap: 10px;
+                }
+            }
+            &Main{
+                width: 310px;
+                &Info{
+                    &Item{
+                        img{
+                            display: none;
+                        }
+                        &Cost{
+                            // width: 60%;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                &Button{
+                    left: 73px
+                }
+            }
+        }
+        &__inventory{
+            width: 320px;
+            overflow: hidden;
+            margin: 0 auto;
+            height: 400px !important;
+            &Item{
+                width: 110px;
+            }
+            &ItemsWrapper{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-left: 76px;
+            }
+            &Items{
+                width: 140px;
+                margin-left: -10px;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            &Wrapper{
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1px;
+            }
+            &Activity{
+                margin-left: 0px;
+            }
+        }
+        &__users{
+            &Content{
+                width: 317px !important;
+                overflow: hidden;
+                &Wrapper{
+                    gap: 30px;
+                    margin-left: 70px;
+                }
+            }
+            &Button{
+                left: -65px !important;
+            }
+        }
+    }
+}

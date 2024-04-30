@@ -25,11 +25,12 @@ import CrashPhoto from "../../assets/img/games/crash.png"
 
 
 function HomePage() {
+    // const gameRef = useRef(null);
     
     return(
         <div className="container">
             <Promo />
-            <div className="games__title">Режимы</div>
+            <div className="games__title"  id='game'>Режимы</div>
             <div className="games__line"></div>
             <div className="games">
                 <Link to="/crash"><Game photo={CrashPhoto} name='Crash' statistic={272} available={true}/></Link>

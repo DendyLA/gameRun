@@ -71,3 +71,36 @@
     z-index: 1;
     margin-left: 20px;
 }
+
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        padding: 0 20px;
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        padding: 0 20px;
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .container{
+        padding: 0 20px;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .game{
+        width: 300px;
+        &__wrapper{
+            width: 300px;
+        }
+        &__upcoming{
+            left: 180px;
+        }
+    }
+}

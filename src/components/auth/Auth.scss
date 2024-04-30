@@ -118,6 +118,7 @@
                 font-family: Oxanium;
                 font-size: 20px;
                 color: #FFFFFF;
+                margin-top: 10px;
             }
             &Items{
                 display: flex;
@@ -148,4 +149,145 @@
 }
 .borderStop{
     border: 2px solid #FF0000;
+}
+
+
+//adaptive
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .auth__exit{
+        margin-left: 20px;
+    }
+    
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .auth__exit{
+        margin-left: 20px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .auth__exit{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    .auth{
+        &__exit{
+            display: none;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            &Email{
+                margin-top: 10px;
+                &Input{
+                    margin-top: 5px;
+                    width: 390px;
+                    height: 56px;
+                }
+            }
+            &Password{
+                margin-top: 15px;
+                &Input{
+                    margin-top: 5px;
+                    width: 390px;
+                    height: 56px;
+                }
+            }
+            &Another{
+                &Title{
+                    margin-top: 10px;
+                }
+            }
+            &Button{
+                width: 390px;
+                height: 50px;
+                background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+                border-radius: 100px;
+                border-style: none;
+                margin-top: 50px;
+                font-family: OxaniumBold;
+                font-size: 20px;
+                color: #FFFFFF;
+                &:hover{
+                    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .page{
+        background: #141010;
+    }
+    .auth{
+        &__exit{
+            display: none;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            &Email{
+                margin-top: 10px;
+                &Input{
+                    margin-top: 5px;
+                    width: 300px;
+                    height: 56px;
+                }
+                &Descr{
+                    font-size: 15px;
+
+                }
+            }
+            &Password{
+                margin-top: 15px;
+                &Input{
+                    margin-top: 5px;
+                    width: 300px;
+                    height: 56px;
+                    margin-left: -10px;
+                }
+                &Descr{
+                    font-size: 15px;
+                    margin-left: -15px;
+                }
+            }
+            &Another{
+                &Title{
+                    margin-top: 10px;
+                }
+            }
+            &Button{
+                width: 310px;
+                height: 50px;
+                background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
+                border-radius: 100px;
+                border-style: none;
+                margin-top: 50px;
+                font-family: OxaniumBold;
+                font-size: 20px;
+                color: #FFFFFF;
+                &:hover{
+                    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
 }

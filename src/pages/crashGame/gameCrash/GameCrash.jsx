@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import './GameCrash.scss'
 
+import InventoryMobile from '../../../components/inventoryMobile/InventoryMobile'
+
 import gameWay from '../../../assets/img/crashImg/gameWay.png'
 import gameWayRed from '../../../assets/img/crashImg/gameWayRed.png'
 import weapons from '../../../assets/img/crashImg/weapons.png'
@@ -232,6 +234,7 @@ function GameCrash() {
                 </div>
                 
             </div>
+            <InventoryMobile />
         </div>
     )
 } 

@@ -268,6 +268,7 @@
         box-shadow: 4px 4px 10px #00FF38;
         border-radius: 30px;
         padding: 20px;
+        overflow: hidden;
         &Wrapper{
             display: flex;
             justify-content: space-around;
@@ -342,6 +343,10 @@
         &Items{
             display: flex;
             margin-left: 10px;
+            &Wrapper{
+                display: flex;
+                
+            }
         }
         &Item{
             width: 140px;
@@ -403,7 +408,9 @@
         }
     }
 }
-
+.inventoryMobile{
+    display: none;
+}
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -566,7 +573,7 @@
         }
         &__users{
             &Content{
-                width: 729px !important;
+                width: 100% !important;
             }
             &Button{
                 left: 154px !important;
@@ -649,28 +656,40 @@
             }
         }
         &__inventory{
-            width: 440px;
-            overflow: hidden;
-            margin: 0 auto;
-            &Activity{
-                margin-left: 755px;
-            }
+            display: none;
         }
         &__users{
             &Content{
-                width: 445px !important;
+                width: 100% !important;
                 &Wrapper{
+                    width: 100%;
                     gap: 30px;
                 }
             }
             &Button{
-                left: 10px !important;
+                left: 5px !important;
             }
         }
+    }
+    .inventoryMobile{
+        display: block;
+        margin: 0 auto;
+    }
+    .title__bid{
+        font-size: 30px !important;
+    }
+    .title{
+        font-size: 30px  !important;
     }
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .title{
+        font-size: 30px  !important;
+    }
+    .title__bid{
+        font-size: 30px  !important;
+    }
     .double{
         padding: 20px;
         &__wrapper{
@@ -758,10 +777,7 @@
             }
         }
         &__inventory{
-            width: 320px;
-            overflow: hidden;
-            margin: 0 auto;
-            height: 400px !important;
+            display: none;
             &Item{
                 width: 110px;
             }
@@ -784,6 +800,7 @@
             &Wrapper{
                 flex-direction: column;
                 flex-wrap: wrap;
+                align-items: center;
                 gap: 1px;
             }
             &Activity{
@@ -792,7 +809,7 @@
         }
         &__users{
             &Content{
-                width: 317px !important;
+                width: 100% !important;
                 overflow: hidden;
                 &Wrapper{
                     gap: 30px;
@@ -803,5 +820,10 @@
                 left: -65px !important;
             }
         }
+    }
+    .inventoryMobile{
+
+        display: block;
+        
     }
 }

@@ -12,10 +12,12 @@ function Rollrun() {
             <div className="title">Режимы Rollrun</div>
             <GameRollrun />
             <div className="title">Активные игры</div>
-            <ActiveGame />
-            <ActiveGame />
-            <ActiveGame />
-            <ActiveGame />
+            <div className="activeWrapper">
+                <ActiveGame />
+                <ActiveGame />
+                <ActiveGame />
+                <ActiveGame />
+            </div>
         </div>
             
         </section>

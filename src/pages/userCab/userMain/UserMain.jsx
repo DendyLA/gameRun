@@ -45,7 +45,7 @@ function UserMain() {
                 </div>
             </div>
             <div className="userMain__promo">
-                <div className="userMain__promoTitle">Промо-код</div>
+                <span className="userMain__promoTitle">Промо-код</span>
                 <div className="userMain__promoDescr">Специальный / Обычный</div>
                 <form action="" className="userMain__promoForm">
                 <label >

@@ -131,7 +131,7 @@
         grid-area: 1 / 2 / 5 / 6;
         &Header{
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             gap: 1px;
             // width: 870px;
             // height: 50px;
@@ -206,6 +206,109 @@
                 background: linear-gradient(0deg, rgba(240, 87, 101, 0.7) 0%, rgba(102, 50, 70, 0.14) 100%), #242C48;
                 opacity: 0.3;
                 border-radius: 12px;
+            }
+        }
+    }
+}
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .market{
+        grid-column-gap: 30px;
+        &__skins{
+            &Content{
+                &Item{
+                    width: 120px;
+                    height: 158px;
+                }
+            }
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .market{
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        &__changer{
+            height: 210px;
+        }
+        &__skins{
+            &Content{
+                padding: 0 30px;
+                overflow-x: scroll;
+                &Item{
+                    width: 120px;
+                    height: 158px;
+                }
+            }
+            &Header{
+                &Search{
+                    width: 150px;
+                }
+                &Count{
+                    width: 44px;
+                    padding: 20px 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .market{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        &__skins{
+            &Content{
+                padding: 0 20px;
+                overflow-x: scroll;
+                height: 665px;
+                &Item{
+                    width: 190px;
+                    height: 178px;
+                }
+            }
+            &Header{
+                
+                &Search{
+                    width: 220px;
+                }
+                &Count{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .market{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        &__skins{
+            &Content{
+                padding: 0 20px;
+                overflow-x: scroll;
+                height: 665px;
+                &Item{
+                    width: 170px;
+                    height: 178px;
+                }
+            }
+            &Header{
+                &Search{
+                    width: 180px;
+                }
+                &Count{
+                    display: none;
+                }
             }
         }
     }

@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import './GameRollrun.scss'
 
+import InventoryMobile from '../../../components/inventoryMobile/InventoryMobile';
+
 import weapon from '../../../assets/img/rollrunImg/weapon.png'
 import prizeBox from '../../../assets/img/rollrunImg/gift.png'
 import box from '../../../assets/img/rollrunImg/box.png'
@@ -79,7 +81,9 @@ function GameRollrun(){
                         <img src={weaponSecond} alt="" className="rollrun__gameQuestContentRightImg" />
                     </div>
                 </div>
+                <i class="bi bi-chevron-down rollrun__gameQuestIcon"></i>
             </div>
+            <InventoryMobile />
         </div>
     )
 }

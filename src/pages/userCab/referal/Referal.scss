@@ -115,10 +115,10 @@
     &__info{
         grid-area: 2 / 2 / 3 / 6;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         &Item{
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             gap: 8px;
             width: 307px;
             height: 110px;
@@ -207,7 +207,8 @@
         &Item{
             margin-top: 20px;
             padding: 7px 20px;
-            width: 1160px;
+            width: 99%;
+            // width: 1160px;
             height: 65px;
             background: #2F2C2C;
             border-radius: 100px;
@@ -252,9 +253,270 @@
 }
 
 .ref__users{
-    width: 1200px;
+    max-width: 1200px;
     height: 250px;
     background: #201E1E;
     box-shadow: 4px 4px 10px #FFFFFF;
     border-radius: 30px;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .referal{
+        &__link{
+            &User{
+                img{
+                    display: none;
+                }
+            }
+            width: 720px;
+            &Main{
+                width: 680px;
+                &Link{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .ref{
+        &__levels{
+            &Content{
+                &Item{
+                    &Money{
+                        margin-right: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .referal{
+        &__link{
+            &User{
+                img{
+                    display: none;
+                }
+            }
+            width: 500px;
+            &Main{
+                .copy{
+                    margin-left: 20px !important;
+                }
+                width: 460px;
+                &Link{
+                    margin-top: 5px;
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__info{
+            
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            &Item{
+                width: 150px;
+                padding-left: 5px;
+            }
+            &Count{
+                font-size: 14px;
+            }
+            &Descr{
+                font-size: 14px;
+            }
+            &Balance{
+                &Button{
+                    display: none;
+                }
+            }
+        }
+    }
+    .ref{
+        &__levels{
+            height: 500px;
+            &Content{
+                &Item{
+                    &Money{
+                        margin-right: 120px;
+                    }
+                }
+            }
+        }
+    }
+    .referal__linkUser img{
+        display: none;
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .referal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__level{
+            width: 390px;
+        }
+        
+        &__link{
+            width: 390px;
+            &Main{
+                width: 350px;
+                .copy{
+                    margin-left: 50px !important;
+                }
+                &Link{
+                    margin-top: 5px;
+                    width: 200px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__info{
+            flex-wrap: wrap;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            &Item{
+                width: 180px;
+            }
+            &Count{
+                font-size: 14px;
+            }
+            &Descr{
+                font-size: 14px;
+            }
+            &Balance{
+                position: relative;
+                right: 10px;
+                margin-top: 20px;
+                width: 390px;
+                &Button{
+                    margin-left: 90px;
+                }
+                &Content{
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .ref{
+        &__levels{
+            height: 500px;
+            &Content{
+                &Item{
+                    &Money{
+                        margin-right: -70px;
+                        font-size: 14px;
+                    }
+                    &Num{
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 10px;
+                        padding: 5px 10px;
+                    }
+                    &Percent{
+                        font-size: 14px;
+                        margin-right: -90px;
+                    }
+                }
+            }
+            &Header{
+                &Descr{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .referal__linkUser img{
+        display: none;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .referal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__level{
+            width: 390px;
+        }
+        
+        &__link{
+            width: 390px;
+            &Main{
+                width: 350px;
+                .copy{
+                    margin-left: 50px !important;
+                }
+                &Link{
+                    margin-top: 5px;
+                    width: 200px;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__info{
+            flex-wrap: wrap;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            &Item{
+                width: 180px;
+            }
+            &Count{
+                font-size: 14px;
+            }
+            &Descr{
+                font-size: 14px;
+            }
+            &Balance{
+                position: relative;
+                margin-top: 20px;
+                width: 390px;
+                &Button{
+                    margin-left: 90px;
+                }
+                &Content{
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .ref{
+        &__levels{
+            height: 500px;
+            &Content{
+                &Item{
+                    &Money{
+                        margin-right: -70px;
+                        font-size: 14px;
+                    }
+                    &Num{
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 10px;
+                        padding: 5px 10px;
+                    }
+                    &Percent{
+                        font-size: 14px;
+                        margin-right: -90px;
+                    }
+                }
+            }
+            &Header{
+                &Descr{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .referal__linkUser img{
+        display: none;
+    }
 }

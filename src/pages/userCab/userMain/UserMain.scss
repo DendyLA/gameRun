@@ -100,8 +100,6 @@
                         border-radius: 100px;
                     }
                     &Descr{
-                        width: 197px;
-                        height: 25px;
                         font-family: OxaniumSBold;
                         font-size: 20px;
                         color: #FFFFFF;
@@ -114,8 +112,6 @@
                     justify-content: flex-end;
                     gap: 5px;
                     &Descr{
-                        width: 87px;
-                        height: 25px;
                         font-family: 'Oxanium';
                         font-size: 20px;
                         color: #F54630;
@@ -249,6 +245,251 @@
             &:hover{
                 box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5);
             }
+        }
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .userMain{
+        // display: flex;
+        // flex-direction: column;
+
+        &__info{
+            width: 960px;
+            &BottomTrade{
+                width: 510px;
+            }
+        }
+        &__balance{
+            width: 350px;
+            margin-left: 130px;
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .userMain{
+        &__info{
+            width: 740px;
+            &Bottom{
+                &Trade{
+                    width: 310px;
+                    &Link{
+                        gap: 15px;
+                        &Descr{
+                            font-size: 16px;
+                            width: 100px;
+                        }
+                    }
+                }
+                &Exit{
+                    width: 360px;
+                }
+            }
+        }
+        &__promo{
+            width: 350px;
+            background-image:none;
+            padding: 20px;
+        }
+        &__balance{
+            width: 350px;
+            margin-left: 10px;
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .userMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__info{
+            position: relative;
+            width: 390px;
+            height: 266px;
+            padding: 5px;
+            &Top{
+                &Notification{
+                    width: 69px;
+                    position: absolute;
+                    bottom: 21px;
+                    right: 80px;
+                    padding: 15px 19px;
+                }
+                &Exit{
+                    width: 69px;
+                    position: absolute;
+                    bottom: 21px;
+                    right: 5px;
+                    padding: 15px 19px;
+                }
+            }
+            &Bottom{
+                flex-direction: column;
+                margin-top: 20px;
+                &Trade{
+                    width: 380px;
+                    padding: 11px 7px;
+                    &Link{
+                        gap: 15px;
+                        &Descr{
+                            font-size: 16px;
+                            width: 190px;
+                        }
+                    }
+                    &Danger{
+                        margin-left: -10px;
+                    }
+                }
+                &Exit{
+                    gap: 8px;
+                    width: 232px;
+                    height: 70px;
+                    margin-top: 10px;
+                    padding: 12px 5px;
+                    &Descr{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        &__promo{
+            width: 350px;
+            padding: 20px;
+            margin-top: -45px;
+            background-position: 200px 40px;
+            &Form{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                input{
+                    padding: 15px 15px 15px 60px ;
+                    width: 191px;
+                    height: 50px;
+                    font-size: 16px;
+                }
+                button{
+                    align-self: auto;
+                    width: 207px;
+                    height: 56px;
+                    padding: 14px 16px;
+                    &::before{
+                        content: 'Применить';
+                        display: inline-block;
+                        font-family: OxaniumSBold;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                    }
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        &__balance{
+            background-position: 100px 0;
+            margin-top: -45px;
+            width: 350px;
+            margin-left: 10px;
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .userMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__info{
+            position: relative;
+            width: 390px;
+            height: 266px;
+            padding: 5px;
+            &Top{
+                &Notification{
+                    width: 69px;
+                    position: absolute;
+                    bottom: 21px;
+                    right: 80px;
+                    padding: 15px 19px;
+                }
+                &Exit{
+                    width: 69px;
+                    position: absolute;
+                    bottom: 21px;
+                    right: 5px;
+                    padding: 15px 19px;
+                }
+            }
+            &Bottom{
+                flex-direction: column;
+                margin-top: 20px;
+                &Trade{
+                    width: 380px;
+                    padding: 11px 7px;
+                    &Link{
+                        gap: 15px;
+                        &Descr{
+                            font-size: 16px;
+                            width: 190px;
+                        }
+                    }
+                    &Danger{
+                        margin-left: -10px;
+                    }
+                }
+                &Exit{
+                    gap: 8px;
+                    width: 232px;
+                    height: 70px;
+                    margin-top: 10px;
+                    padding: 12px 5px;
+                    &Descr{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        &__promo{
+            width: 390px;
+            padding: 20px;
+            margin-top: -45px;
+            background-position: 200px 40px;
+            &Form{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                input{
+                    padding: 15px 15px 15px 60px ;
+                    width: 191px;
+                    height: 50px;
+                    font-size: 16px;
+                }
+                button{
+                    align-self: auto;
+                    width: 207px;
+                    height: 56px;
+                    padding: 14px 16px;
+                    &::before{
+                        content: 'Применить';
+                        display: inline-block;
+                        font-family: OxaniumSBold;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                    }
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        &__balance{
+            background-position: 100px 0;
+            margin-top: -45px;
+            width: 390px;
+            margin-left: 10px;
         }
     }
 }

@@ -7,13 +7,13 @@
     position: relative;
     margin-top: 100px;
     margin-bottom: 28px;
-    font-family: OxaniumC;
+    font-family: OxaniumBold;
     font-size: 60px;
     color: #FFFFFF; //!!!!!!!!!!!!Font is another
     &::after{
         content: '';
         display: inline-block;
-        width: 919px;
+        max-width: 919px;
         height: 1px;
         background: #DB442A;
         position: absolute;
@@ -26,4 +26,55 @@
         
     }
 }
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .title{
+        &::after{
+            display: none;
+        }
+    }
+    .games__title{
+        &::after{
+            display: none;
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .title{
+        &::after{
+            display: none;
+        }
+    }
+    .games__title{
+        &::after{
+            display: none;
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .statistic{
+        width: 100%;
+        grid-column-gap: 80px !important;
+    }
+    .title{
+        &::after{
+            display: none;
+        }
+    }
+    .games__title{
+        &::after{
+            display: none ;
+        }
+    }
+    .games{
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
 

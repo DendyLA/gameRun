@@ -1,5 +1,5 @@
 .statistic{
-    width: 1200px;
+    width: 100%;
     height: 260px;
     margin-top: 71px;
     display: grid;
@@ -67,7 +67,6 @@
         height: 115px;
         border-radius: 0px 20px 20px 0px;
         background: #0D210F;
-        margin-left: 30px;
         grid-area: 1 / 4 / 2 / 6;
         &::before{
             content: '';
@@ -227,7 +226,6 @@
         }
         &__earn{
             grid-area: 2 / 3 / 3 / 3;
-            margin-left: 0px;
             width: 240px;
         }
         &__victory{
@@ -305,13 +303,12 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .statistic{
-        width: 480px;
+        width: 486px;
         margin: 50px 0;
         height: 400px;
-        gap: 15px;
         &__time{
             grid-area: 1 / 1 / 2 / 5;
-            width: 310px;
+            width: 400px;
             &Graphic{
                 margin-left: 10px;
             }
@@ -322,30 +319,34 @@
         &__earn{
             grid-area: 2 / 3 / 3 / 3;
             margin-left: 0px;
-            width: 140px;
+            width: 180px;
             margin-left: 10px;
+            position: relative;
+            left: 50px;
             &Sum{
                 font-size: 20px;
             }
         }
         &__victory{
             grid-area: 2 / 1 / 3 / 3;
-            width: 140px;
+            width: 180px;
             &Descr{
                 font-size: 12px;
             }
         }
         &__lose{
             grid-area: 3 / 1 / 4 / 3;
-            width: 140px;
+            width: 180px;
             &Descr{
                 font-size: 12px;
             }
         }
         &__exp{
             grid-area: 3 / 3 / 4 / 5;
-            width: 140px;
+            width: 180px;
             margin-left: 10px;
+            position: relative;
+            left: 50px;
             &Sum{
                 font-size: 20px;
             }

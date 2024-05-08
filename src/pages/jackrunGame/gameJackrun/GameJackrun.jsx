@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 
 import './GameJackrun.scss'
 
+import InventoryMobile from '../../../components/inventoryMobile/InventoryMobile'
+
 import userPhoto from '../../../assets/img/crashImg/user.png'
 import userIcon from '../../../assets/img/profile/user.png'
 
@@ -164,6 +166,7 @@ function GameJackrun() {
                         </div>
                     </div>
                 </div>
+                <InventoryMobile />
         </div>
     )
 }

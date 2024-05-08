@@ -29,7 +29,7 @@ function Referal() {
                             <div className="referal__linkMainLink">https://cs2run.vip/ref/jgnyrk</div>
                             <div className="referal__linkMainDescr">Реферальная ссылка</div>
                         </div>
-                        <img src={copy} alt="" />
+                        <img className='copy' src={copy} alt="" />
                     </div>
                 </div>
                 <div className="referal__linkUser"><img src={user} alt="" /> </div>

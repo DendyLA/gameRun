@@ -199,3 +199,104 @@
         }
     }
 }
+.activeMobile{
+    display: none;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .activeGame{
+        &__info{
+            width: 950px;
+            gap: 70px;
+            &Left{
+                &Img{
+                    display: none;
+                }
+            }
+            &Middle{
+                left: 10px;
+            }
+        }
+        &__game{
+            width: 950px;
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .activeGame{
+        
+        &__info{
+            width: 725px;
+            gap: 10px;
+            &Left{
+                &Img{
+                    display: none;
+                }
+            }
+            &Middle{
+                left: 10px;
+            }
+            &Right{
+                width: 300px;
+                &Wrapper{
+                    gap: 5px;
+                }
+                &User{
+                    width: 40px !important;
+                    height: 40px !important;
+                    margin-top: 10px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                &Button{
+                    width: 80px;
+                    font-size: 14px;
+                    padding: 19px 17px;
+                }
+            }
+        }
+        &__game{
+            overflow: hidden;
+            width: 725px;
+            &List{
+                width: 900px;
+                position: relative;
+                left: -100px;
+            }
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .activeGame{
+        display: none;
+    }
+    .activeMobile{
+        display: block;
+    }
+    .activeWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .activeGame{
+        display: none;
+    }
+    .activeMobile{
+        display: block;
+    }
+    .activeWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -2,6 +2,7 @@
 
 import './GameDouble.scss'
 
+import InventoryMobile from '../../../components/inventoryMobile/InventoryMobile';
 //photo
 
 import paroshutte from '../../../assets/img/doubleImg/paroshutte.png'
@@ -186,6 +187,7 @@ function GameDouble() {
                         
                     </div>
                 </div>
+                <InventoryMobile />
         </div>
     )
 }

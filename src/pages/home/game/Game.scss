@@ -79,28 +79,66 @@
     .container{
         padding: 0 20px;
     }
+    .games__title{
+        ::after{
+            display: none ;
+        }
+    }
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     .container{
         padding: 0 20px;
     }
+    .games__title{
+        ::after{
+            display: none;
+        }
+    }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .game{
+        margin: 10px;
+        width: 187px;
+        height: 140px;
+        background-size: 100%;
+        &__wrapper{
+            width: 187px;
+            height: 140px;
+        }
+        &__upcoming{
+            left: 100px;
+        }
+    }
     .container{
         padding: 0 20px;
+    }
+    .games__title{
+        ::after{
+            display: none;
+        }
     }
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .game{
-        width: 300px;
+        margin: 0;
+        width: 187px;
+        height: 140px;
+        background-size: 100%;
         &__wrapper{
-            width: 300px;
+            width: 187px;
+            height: 140px;
         }
         &__upcoming{
-            left: 180px;
+            left: 100px;
+        }
+    }
+    .games__title{
+        ::after{
+            content: none;
+            display: none;
         }
     }
 }

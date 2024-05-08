@@ -166,6 +166,7 @@
             width: 469px;
             height: 194px;
             padding: 20px 20px;
+            border-radius: 30px;
         }
         &Wrapper{
             position: absolute;
@@ -460,3 +461,355 @@
         }
     }
 }
+.inventoryMobile{
+    display: none;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jackrun{
+        &__wrapper{
+            grid-column-gap:  0px;
+        }
+        &__game{
+            width: 550px;
+            &Activity{
+                width: 500px;
+                background-position: -80px 180px;
+                &Roll{
+                    margin-left: -59px;
+                }
+            }
+        }
+        &__bid{
+            &Info{
+                width: 380px;
+            }
+            &Wrapper{
+                width: 380px;
+            }
+            &Main{
+                width: 380px;
+                &Count{
+                    &Wrapper{
+                        width: 350px;
+                    }
+                }
+                &Percent{
+                    &Wrapper{
+                        width: 350px;
+                    }
+                }
+                &Button{
+                    left: 100px;
+                }
+            }
+        }
+        &__inventory{
+            margin-top: 10px;
+            width: 950px;
+            overflow: hidden;
+            &Items{
+                &:nth-child(6){
+                    display: none;
+                }
+                &:nth-child(7){
+                    display: none;
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 30px;
+        &::after{
+            display: none;
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .jackrun{
+        &__wrapper{
+            grid-column-gap:  0px;
+        }
+        &__game{
+            width: 400px;
+            &Activity{
+                width: 350px;
+                background-position: -160px 180px;
+                &Roll{
+                    margin-left: -49px;
+                }
+            }
+            &Info{
+                margin-top: 30px;
+                &Money{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Users{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Skins{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__bid{
+            &Info{
+                width: 300px;
+            }
+            &Wrapper{
+                width: 300px;
+            }
+            &Main{
+                width: 300px;
+                &Title{
+                    font-size: 14px;
+                }
+                &Count{
+                    &Wrapper{
+                        width: 260px;
+                    }
+                }
+                &Percent{
+                    &Wrapper{
+                        width: 260px;
+                    }
+                }
+                &Button{
+                    left: 70px;
+                }
+            }
+        }
+        &__inventory{
+            margin-top: 10px;
+            width: 750px;
+            overflow: hidden;
+            &Items{
+                &:nth-child(5){
+                    display: none;
+                }
+                &:nth-child(6){
+                    display: none;
+                }
+                &:nth-child(7){
+                    display: none;
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 30px;
+        &::after{
+            display: none;
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .jackrun{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        &__game{
+            width: 400px;
+            &Activity{
+                width: 350px;
+                background-position: -160px 180px;
+                &Roll{
+                    margin-left: -49px;
+                }
+            }
+            &Info{
+                margin-top: 30px;
+                &Money{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Users{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Skins{
+                    font-size: 14px;
+                    span{
+                        font-size: 14px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__bid{
+            &Info{
+                width: 400px;
+            }
+            &Wrapper{
+                width: 400px;
+            }
+            &Main{
+                width: 400px;
+                &Title{
+                    font-size: 14px;
+                }
+                &Count{
+                    &Wrapper{
+                        width: 360px;
+                    }
+                }
+                &Percent{
+                    &Wrapper{
+                        width: 360px;
+                    }
+                }
+                &Button{
+                    left: 120px;
+                }
+            }
+        }
+        &__inventory{
+
+            display: none;
+        }
+    }
+    .inventoryMobile{
+        margin-top: 30px;
+        display: block;
+    }
+    .title{
+        &::after{
+            display: none;
+        }
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .jackrun{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        &__game{
+            width: 320px;
+            &Activity{
+                width: 280px;
+                background-position: -190px 180px;
+                &Roll{
+                    margin-left: -80px;
+                }
+            }
+            &Info{
+                margin-top: 30px;
+                &_bottom{
+                    gap: 20px;
+                }
+                &Money{
+                    font-size: 11px;
+                    span{
+                        font-size: 11px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Users{
+                    font-size: 11px;
+                    span{
+                        font-size: 11px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                &Skins{
+                    font-size: 11px;
+                    span{
+                        font-size: 11px;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__bid{
+            width: 320px;
+            &Info{
+                width: 320px;
+            }
+            &Wrapper{
+                width: 320px;
+            }
+            &Main{
+                width: 320px;
+                &Title{
+                    font-size: 14px;
+                }
+                &Count{
+                    &Wrapper{
+                        width: 280px;
+                    }
+                }
+                &Percent{
+                    &Wrapper{
+                        width: 280px;
+                    }
+                }
+                &Button{
+                    left: 80px;
+                }
+            }
+        }
+        &__inventory{
+
+            display: none;
+        }
+    }
+    .inventoryMobile{
+        margin-top: 30px;
+        display: block;
+    }
+    .title{
+        &::after{
+            display: none;
+        }
+    }
+    .jackrun__users{
+        gap: 16px !important;
+    }
+}
+

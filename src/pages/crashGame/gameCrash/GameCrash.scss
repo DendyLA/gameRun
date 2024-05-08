@@ -213,8 +213,6 @@
             }
         }
         &Descr{
-            width: 356px;
-            height: 20px;
             font-family: OxaniumMedium;
             font-size: 16px;
             color: #BABABA;
@@ -384,18 +382,339 @@
     }
     
 }
+.inventoryMobile{
+    display: none;
+}
 
 
-// /* Portrait tablets and medium desktops */
-// @media (min-width: 992px) and (max-width: 1199px) {
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-// }
-// /* Portrait tablets and small desktops */
-// @media (min-width: 768px) and (max-width: 991px) {
-// }
-// /* Landscape phones and portrait tablets */
-// @media (max-width: 767px) {
-// }
-// /* Landscape phones and smaller */
-// @media (max-width: 480px) {
-// }
+    .crashGame{
+        grid-column-gap: 0px;
+        &__game{
+            width: 500px;
+            &Activity{
+                width: 450px;
+                &Img{
+                    width: 450px;
+                }
+                &Runner{
+                    left: 300px;
+                }
+            }
+            &LastX{
+                overflow: hidden;
+            }
+        }
+        &__bid{
+            width: 300px;
+            &Header{
+                width: 300px;
+                padding: 10px 10px;
+                & img{
+                    width: 300px;
+                }
+            }
+            &Info{
+                width: 260px;
+            }
+            &XItem{
+                width: 60px;
+                font-size: 14px;
+                padding: 12px 10px;
+            }
+            &Descr{
+                font-size: 11px;
+            }
+            &Button{
+                margin-left:64px;
+            }
+        }
+        &__inventory{
+            width: 950px;
+            overflow: hidden;
+            &Wrapper{
+                margin-left: 10px;
+            }
+            &Items{
+                &:nth-child(5){
+                    display: none;
+                }
+                &:nth-child(6){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .crashGame{
+        grid-column-gap: 0px;
+        &__game{
+            width: 400px;
+            &Activity{
+                width: 350px;
+                &Img{
+                    width: 350px;
+                }
+                &Runner{
+                    left: 200px;
+                }
+            }
+            &LastX{
+                overflow: hidden;
+            }
+            &InfoMoney{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoUsers{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoSkins{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+        
+        &__bid{
+            width: 300px;
+            &Header{
+                width: 300px;
+                padding: 10px 10px;
+                & img{
+                    width: 300px;
+                }
+            }
+            &Info{
+                width: 260px;
+            }
+            &XItem{
+                width: 60px;
+                font-size: 14px;
+                padding: 12px 10px;
+            }
+            &Descr{
+                font-size: 11px;
+            }
+            &Button{
+                margin-left:64px;
+            }
+        }
+        &__inventory{
+            width: 730px;
+            overflow: hidden;
+            &Wrapper{
+                margin-left: 10px;
+            }
+            &Items{
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(5){
+                    display: none;
+                }
+                &:nth-child(6){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .crashGame{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        &__game{
+            width: 390px;
+            &Activity{
+                width: 332px;
+                &Img{
+                    width: 332px;
+                }
+                &Runner{
+                    left: 190px;
+                }
+            }
+            &LastX{
+                overflow: hidden;
+                gap: 13px;
+            }
+            &InfoMoney{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoUsers{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoSkins{
+                font-size: 14px;
+                span{
+                    font-size: 14px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+        &__bid{
+            width: 390px;
+            &Header{
+                width: 390px;
+                padding: 10px 10px;
+                & img{
+                    width: 390px;
+                }
+            }
+            &Info{
+                width: 340px;
+            }
+            &XItem{
+                width: 77px;
+                font-size: 14px;
+                padding: 12px 10px;
+            }
+            &Descr{
+                font-size: 11px;
+            }
+            &Button{
+                margin-left:110px;
+            }
+        }
+        &__inventory{
+            display: none;
+        }
+    }
+    .inventoryMobile{
+        display: block;
+    }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .crashGame{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        &__game{
+            width: 340px;
+            &Activity{
+                width: 280px;
+                &Img{
+                    width: 280px;
+                }
+                &Runner{
+                    left: 140px;
+                }
+            }
+            &LastX{
+                overflow: hidden;
+                gap: 5px;
+                &Item{
+                    width: 68px;
+                }
+            }
+            &InfoMoney{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoUsers{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+            &InfoSkins{
+                font-size: 11px;
+                span{
+                    font-size: 11px;
+                }
+                &::before{
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+        &__bid{
+            width: 340px;
+            &Header{
+                width: 340px;
+                padding: 10px 10px;
+                & img{
+                    width: 340px;
+                }
+            }
+            &Info{
+                width: 300px;
+            }
+            &XItem{
+                width: 77px;
+                font-size: 14px;
+                padding: 12px 10px;
+            }
+            &Descr{
+                font-size: 11px;
+            }
+            &Button{
+                margin-left:90px;
+            }
+        }
+        &__inventory{
+            display: none;
+        }
+    }
+    .inventoryMobile{
+        display: block;
+    }
+    .users{
+        gap: 15px !important;
+    }
+}

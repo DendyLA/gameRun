@@ -1,5 +1,5 @@
 .crash{
-
+    overflow-x: hidden;
     &__title{
         position: relative;
         font-family: OxaniumSBold;
@@ -115,5 +115,8 @@
                 }
             }
         }
+    }
+    .users{
+        gap: 6px !important;
     }
 }

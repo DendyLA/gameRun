@@ -294,22 +294,31 @@
         align-items: center;
         &__skins{
             &Content{
-                padding: 0 20px;
+                padding: 0 15px;
+                gap: 3px;
                 overflow-x: scroll;
                 height: 665px;
                 &Item{
-                    width: 170px;
-                    height: 178px;
+                    width: 140px;
+                    height: 148px;
                 }
             }
             &Header{
                 &Search{
-                    width: 180px;
+                    width: 150px;
+                }
+                &Price{
+                    width: 120px;
                 }
                 &Count{
                     display: none;
                 }
             }
+        }
+    }
+    .usercab__transaction{
+        &Descr{
+            text-align: center;
         }
     }
 }

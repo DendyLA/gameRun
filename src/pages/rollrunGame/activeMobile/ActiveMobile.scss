@@ -185,3 +185,55 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .activeMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__game{
+            &Wrapper{
+                background-position: 65% -6px;
+            }
+            width: 280px;
+            overflow: hidden;
+            &Top{
+                width: 280px;
+                &Content{
+                    &Name{
+                        font-size: 12px;
+                    }
+                    &Descr{
+                        font-size: 12px;
+                        width: 80px;
+                    }
+                }
+            }
+            &Users{
+                margin-top: -10px;
+                width: 280px;
+                &Item{
+                    width: 30px;
+                    height: 30px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        &__join{
+            width: 280px;
+            &Bottom{
+                gap: 5px;
+            }
+            &Top{
+                &Content{
+                    &Descr{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

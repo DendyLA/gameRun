@@ -404,10 +404,23 @@
         align-items: center;
         &__info{
             position: relative;
-            width: 390px;
+            width: 300px;
             height: 266px;
             padding: 5px;
             &Top{
+                &User{
+                    &Name{
+                        font-size: 14px;
+                    }
+                }
+                &Id{
+                    width: 130px;
+                    height: 50px;
+                    padding: 14px 17px;
+                    &Descr{
+                        font-size: 11px;
+                    }
+                }
                 &Notification{
                     width: 69px;
                     position: absolute;
@@ -427,13 +440,13 @@
                 flex-direction: column;
                 margin-top: 20px;
                 &Trade{
-                    width: 380px;
+                    width: 290px;
                     padding: 11px 7px;
                     &Link{
                         gap: 15px;
                         &Descr{
-                            font-size: 16px;
-                            width: 190px;
+                            font-size: 13px;
+                            width: 70px;
                         }
                     }
                     &Danger{
@@ -442,7 +455,7 @@
                 }
                 &Exit{
                     gap: 8px;
-                    width: 232px;
+                    width: 132px;
                     height: 70px;
                     margin-top: 10px;
                     padding: 12px 5px;
@@ -453,7 +466,7 @@
             }
         }
         &__promo{
-            width: 390px;
+            width: 290px;
             padding: 20px;
             margin-top: -45px;
             background-position: 200px 40px;
@@ -488,7 +501,7 @@
         &__balance{
             background-position: 100px 0;
             margin-top: -45px;
-            width: 390px;
+            width: 290px;
             margin-left: 10px;
         }
     }

@@ -697,10 +697,10 @@
             flex-direction: column;
         }
         &__game{
-            width: 310px;
+            width: 280px;
             &Activity{
-                background-position: -198px 200px;
-                width: 280px;
+                background-position: -218px 200px;
+                width: 240px;
                 overflow: hidden;
                 &Roll{
                     margin-top: 56px;
@@ -712,22 +712,33 @@
             }
             &Info{
                 width: 290px;
-                margin-left: -10px;
+                margin-left: -20px;
             }
             &InfoMoney{
                 font-size: 9px;
+                &::before{
+                    display: none;
+                }
                 span{
                     font-size: 9px;
                 }
             }
             &InfoUsers{
                 font-size: 9px;
+                margin-left: -5px;
+                &::before{
+                    display: none;
+                }
                 span{
                     font-size: 9px;
                 }
             }
             &InfoSkins{
                 font-size: 9px;
+                margin-left: -15px;
+                &::before{
+                    display: none;
+                }
                 span{
                     font-size: 9px;
                 }
@@ -735,6 +746,9 @@
             &LastInfo{
                 width: 45px;
                 padding: 12px;
+                &:nth-child(4){
+                    padding: 12px 18px;
+                }
                 img{
                     display: none;
                 }
@@ -750,16 +764,16 @@
         }
         &__bid{
             &Jackpot{
-                width: 310px;
+                width: 280px;
                 &Wrapper{
-                    width: 310px;
+                    width: 280px;
                 }
                 &Icons{
                     gap: 10px;
                 }
             }
             &Main{
-                width: 310px;
+                width: 280px;
                 &Info{
                     &Item{
                         img{
@@ -772,7 +786,7 @@
                     }
                 }
                 &Button{
-                    left: 73px
+                    left: 58px
                 }
             }
         }
@@ -813,11 +827,11 @@
                 overflow: hidden;
                 &Wrapper{
                     gap: 30px;
-                    margin-left: 70px;
+                    margin-left: 15%;
                 }
             }
             &Button{
-                left: -65px !important;
+                left: -32% !important;
             }
         }
     }

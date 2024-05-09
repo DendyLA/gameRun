@@ -135,3 +135,33 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .inventoryMobile{
+        width: 280px;
+        &__content{
+            &Item{
+                &Main{
+                    width: 100px;
+                }
+                &Button{
+                    width: 100px;
+                    &Descr{
+                        font-size: 8px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+        &__buttons{
+            &Market{
+                width: 130px;
+                padding: 15px 30px;
+            }
+            &Widthraw{
+                width: 130px;
+                padding: 15px 30px;
+            }
+        }
+    }
+}

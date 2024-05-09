@@ -208,14 +208,14 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .current{
-        width: 390px;
+        width: 360px;
 
         margin: 20px auto;
         &__image{
             display: none;
         }
         &__button{
-            left: 80px;
+            left: 120px;
         }
         &__skin{
             display: none;

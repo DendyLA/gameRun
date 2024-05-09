@@ -438,25 +438,31 @@
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
     .referal{
         display: flex;
         flex-direction: column;
         align-items: center;
         &__level{
-            width: 390px;
+            width: 290px;
         }
         
         &__link{
-            width: 390px;
+            width: 290px;
+            &Title{
+                font-size: 14px;
+            }
             &Main{
-                width: 350px;
+                width: 260px;
                 .copy{
-                    margin-left: 50px !important;
+                    margin-left: -10px !important;
                 }
                 &Link{
                     margin-top: 5px;
-                    width: 200px;
-                    font-size: 14px;
+                    width: 170px;
+                    font-size: 12px;
                 }
             }
         }
@@ -467,20 +473,26 @@
                 height: 40px;
             }
             &Item{
-                width: 180px;
+                width: 140px;
+                height: 90px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
             }
             &Count{
                 font-size: 14px;
             }
             &Descr{
-                font-size: 14px;
+                font-size: 12px;
             }
             &Balance{
                 position: relative;
                 margin-top: 20px;
-                width: 390px;
+                width: 290px;
+                padding: 20px 20px;
                 &Button{
-                    margin-left: 90px;
+                    margin-left: 30px;
                 }
                 &Content{
                     align-self: center;
@@ -493,8 +505,9 @@
             height: 500px;
             &Content{
                 &Item{
+                    padding: 7px 10px;
                     &Money{
-                        margin-right: -70px;
+                        margin-right: -100px;
                         font-size: 14px;
                     }
                     &Num{
@@ -502,16 +515,20 @@
                         height: 30px;
                         margin-top: 10px;
                         padding: 5px 10px;
+                        
                     }
                     &Percent{
-                        font-size: 14px;
-                        margin-right: -90px;
+                        font-size: 11px;
+                        margin-right: -100px;
+                    }
+                    &Deposite{
+                        font-size: 12px;
                     }
                 }
             }
             &Header{
                 &Descr{
-                    font-size: 12px;
+                    font-size: 8px;
                 }
             }
         }

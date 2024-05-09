@@ -124,15 +124,15 @@
 @media (max-width: 480px) {
     .game{
         margin: 0;
-        width: 187px;
-        height: 140px;
+        width: 307px;
+        height: 190px;
         background-size: 100%;
         &__wrapper{
-            width: 187px;
-            height: 140px;
+            width: 307px;
+            height: 190px;
         }
         &__upcoming{
-            left: 100px;
+            left: 200px;
         }
     }
     .games__title{

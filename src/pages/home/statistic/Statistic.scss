@@ -306,7 +306,7 @@
         width: 280px;
         margin: 50px 0;
         height: 400px;
-        gap: 35px !important;
+        grid-column-gap: 5px !important;
         &__time{
             grid-area: 1 / 1 / 2 / 5;
             width: 320px;
@@ -320,9 +320,8 @@
         &__earn{
             grid-area: 2 / 3 / 3 / 3;
             width: 140px;
-            margin-left: 30px !important;
+            // margin-left: 30px !important;
             position: relative;
-            left: 50px;
             &Sum{
                 font-size: 20px;
             }
@@ -344,7 +343,7 @@
         &__exp{
             grid-area: 3 / 3 / 4 / 5;
             width: 140px;
-            margin-left: 80px !important;
+            // margin-left: 80px !important;
             position: relative;
             &Sum{
                 font-size: 20px;

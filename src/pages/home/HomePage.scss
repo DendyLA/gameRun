@@ -57,10 +57,6 @@
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    .statistic{
-        width: 100%;
-        grid-column-gap: 80px !important;
-    }
     .title{
         &::after{
             display: none;

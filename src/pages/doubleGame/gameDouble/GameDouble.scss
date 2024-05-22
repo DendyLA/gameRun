@@ -481,11 +481,12 @@
             }
         }
         &__users{
+            width: 955px;
             &Content{
-                width: 955px !important;
+                width: 100% !important;
             }
             &Button{
-                left: 234px;
+                left: 254px !important;
             }
         }
     }
@@ -572,11 +573,12 @@
             }
         }
         &__users{
+            width: 702px;
             &Content{
                 width: 100% !important;
             }
             &Button{
-                left: 154px !important;
+                left: 134px !important;
             }
         }
     }
@@ -659,6 +661,7 @@
             display: none;
         }
         &__users{
+            width: 452px;
             &Content{
                 width: 100% !important;
                 &Wrapper{
@@ -695,6 +698,7 @@
         &__wrapper{
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         &__game{
             width: 280px;
@@ -823,16 +827,17 @@
             }
         }
         &__users{
+            width: 310px;
             &Content{
                 width: 100% !important;
                 overflow: hidden;
                 &Wrapper{
                     gap: 30px;
-                    margin-left: 15%;
+                    margin-left: 19%;
                 }
             }
             &Button{
-                left: -32% !important;
+                margin-left: 20% !important;
             }
         }
     }

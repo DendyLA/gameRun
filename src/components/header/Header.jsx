@@ -46,7 +46,7 @@ function Header(){
 
 
             <div className="logo__mobile">Logo <span>Game</span></div>
-            <div className="nav__mobileBtn " onClick={toggleActive}></div>
+            <div className="nav__mobileBtn bi bi-list" onClick={toggleActive}></div>
                 
                 <nav className={`nav__mobile ${active ? 'nav__active' : ''}`}>
                     <Link to='/usercab'><a href="" className="nav__mobile_nav__item">Главная</a></Link> 

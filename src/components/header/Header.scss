@@ -185,9 +185,7 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    .header{
 
-    }
     .header__wrapper{
         display: none;
     }
@@ -198,16 +196,16 @@
         display: block;
     }
     .logo__mobile{
-        display: block;
+        display: inline-block;
         position: relative;
+        
         z-index: 1;
     }
     .nav__mobileBtn{
-        background-image: url(../../assets/img/menu.png);
-        background-repeat: no-repeat;
+        color: white;
+        font-size: 30px;
         cursor: pointer;
         width: 30px;
-        height: 27.5px;
         position: absolute;
         right: 30px;
         top: 40px;

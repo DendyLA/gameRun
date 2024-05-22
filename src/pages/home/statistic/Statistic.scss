@@ -304,13 +304,15 @@
 @media (max-width: 480px) {
     .statistic{
         width: 100%;
-        margin: 50px auto;
+        margin: 150px auto 0 auto;
         height: 400px;
-        grid-column-gap: 5px !important;
+        grid-row-gap: 55px !important;
         align-items: center;
+        grid-template-columns: 0;
+        grid-template-rows: 0;
         &__time{
             grid-area: 1 / 1 / 2 / 5;
-            width: 320px;
+            width: 100%;
             &Graphic{
                 margin-left: 10px;
             }
@@ -321,7 +323,7 @@
         &__earn{
             grid-area: 2 / 3 / 3 / 3;
             width: 140px;
-            // margin-left: 30px !important;
+            margin-left: 30px !important;
             position: relative;
             &Sum{
                 font-size: 15px;
@@ -337,6 +339,7 @@
         &__lose{
             grid-area: 3 / 1 / 4 / 3;
             width: 140px;
+            margin-top: -130px;
             &Descr{
                 font-size: 12px;
             }
@@ -344,7 +347,8 @@
         &__exp{
             grid-area: 3 / 3 / 4 / 5;
             width: 140px;
-            // margin-left: 80px !important;
+            margin-top: -130px;
+            margin-left: 30px !important;
             position: relative;
             &Sum{
                 font-size: 15px;

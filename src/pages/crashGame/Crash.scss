@@ -44,7 +44,7 @@
 }
 .users{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 87px;
     margin-top: 25px;
@@ -105,6 +105,13 @@
 @media (max-width: 480px) {
     .crash{
         margin-top: 100px;
+        .container{
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            padding: 0 10px !important;
+        }
         &__title{
             &::after{
                 display: none ;

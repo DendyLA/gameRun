@@ -199,6 +199,18 @@
             overflow: hidden;
             &Top{
                 width: 280px;
+                &Money{
+                    font-size: 12px;
+                    margin-left: 50px;
+                    display: flex;
+                    justify-content: center;
+                    ::before{
+                        display: inline !important;
+                        vertical-align: middle;
+                        position: relative;
+                        top: 110px;
+                    }
+                }
                 &Content{
                     &Name{
                         font-size: 12px;
@@ -206,6 +218,9 @@
                     &Descr{
                         font-size: 12px;
                         width: 80px;
+                    }
+                    &Count{
+                        font-size: 12px;
                     }
                 }
             }
@@ -228,7 +243,29 @@
                 gap: 5px;
             }
             &Top{
+                &Pistol{
+                    left: -20px;
+                }
+                &Money{
+                    font-size: 12px;
+                    margin-left: 45px;
+                    display: flex;
+                    justify-content: center;
+                    ::before{
+                        display: inline !important;
+                        vertical-align: middle;
+                        position: relative;
+                        top: 110px;
+                    }
+                }
                 &Content{
+                    margin-left: 0;
+                    &Name{
+                        font-size: 12px;
+                    }
+                    &Count{
+                        font-size: 12px;
+                    }
                     &Descr{
                         font-size: 12px;
                     }

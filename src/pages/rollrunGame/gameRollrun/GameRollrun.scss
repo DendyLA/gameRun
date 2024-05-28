@@ -38,6 +38,7 @@
                 display: flex;
                 justify-content: center;
                 margin-top: 10px;
+                align-self: center;
                 &::before{
                     content: url(../../../assets/icon/people.png);
                     display: inline-block;
@@ -401,6 +402,9 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .rollrun{
+        .container{
+            padding: 0 10px !important;
+        }
         &__game{
             display: flex;
             flex-direction: column;
@@ -444,7 +448,7 @@
                             width: 30px;
                             height: 30px;
                             font-size: 15px;
-                            padding: 8px 8px;
+                            padding: 7px 7px;
                         }
                     }
                     &Button{

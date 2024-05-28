@@ -695,10 +695,15 @@
     }
     .double{
         padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         &__wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
         &__game{
             width: 280px;
@@ -750,7 +755,7 @@
             &LastInfo{
                 width: 45px;
                 height: 45px;
-                padding: 12px;
+                padding: 10px;
                 &:nth-child(4){
                     padding: 12px 18px;
                 }
@@ -764,7 +769,7 @@
                 height: auto;
             }
             &LastTitle{
-                font-size: 12px;
+                font-size: 11px;
             }
         }
         &__bid{
@@ -780,13 +785,21 @@
             &Main{
                 width: 280px;
                 &Info{
+                    
                     &Item{
+                        width: 58px;
                         img{
                             display: none;
                         }
+                        &X{
+                            font-size: 11px;
+                            bottom: 14px;
+                        }
                         &Cost{
                             // width: 60%;
-                            font-size: 13px;
+                            font-size: 11px;
+                            right: 12px;
+                            top: 12px;
                         }
                     }
                 }
@@ -797,53 +810,36 @@
         }
         &__inventory{
             display: none;
-            &Item{
-                width: 110px;
-            }
-            &ItemsWrapper{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                margin-left: 76px;
-            }
-            &Items{
-                width: 140px;
-                margin-left: -10px;
-                margin-top: 50px;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-            &Wrapper{
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 1px;
-            }
-            &Activity{
-                margin-left: 0px;
-            }
+            
         }
         &__users{
             width: 280px;
+            
             &Content{
                 width: 100% !important;
                 overflow: hidden;
+                padding: 38px 120px 38px 30px !important;  
                 &Wrapper{
                     gap: 30px;
                     margin-left: 19%;
                 }
             }
             &Button{
-                margin-left: 19% !important;
+                margin-left: 17% !important;
             }
         }
     }
     .inventoryMobile{
 
         display: block;
-        
+        align-self: center;
+        position: relative;
+        margin: 0 auto;
     }
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 0 0px !important;
+    }
+
 }

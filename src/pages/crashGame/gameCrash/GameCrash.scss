@@ -49,7 +49,7 @@
             }
             &Runner{
                 position: absolute;
-                bottom: -200px;
+                bottom: -170px;
                 left: 500px;
                 width: 100%;
                 height: 100%;
@@ -61,6 +61,7 @@
             .backgroundInactive{
                 background-image: url(../../../assets/img/crashImg/runnerDown.png);
                 background-repeat: no-repeat;
+                bottom: -190px;
             }
         }
         &Info span{
@@ -647,9 +648,10 @@
             }
             &LastX{
                 overflow: hidden;
-                gap: 5px;
+                gap: 6px;
                 &Item{
                     width: 68px;
+                    padding: 10px 10px;
                 }
             }
             &InfoMoney{
@@ -704,7 +706,7 @@
                 font-size: 11px;
             }
             &Button{
-                margin-left:90px;
+                margin-left:80px;
             }
         }
         &__inventory{

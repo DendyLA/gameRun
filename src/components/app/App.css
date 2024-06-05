@@ -74,3 +74,10 @@ a{
 html {
     -webkit-text-size-adjust: none;
 }
+
+
+@media (max-width: 480px) {
+    .container{
+        padding: 0 20px !important;
+    }
+}

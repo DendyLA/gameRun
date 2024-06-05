@@ -696,6 +696,10 @@
             }
             &Info{
                 width: 300px;
+                &Icon{
+                    width: 18px;
+                    height: 18px;
+                }
             }
             &XItem{
                 width: 77px;

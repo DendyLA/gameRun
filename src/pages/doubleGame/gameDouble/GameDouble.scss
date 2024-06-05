@@ -784,6 +784,10 @@
             }
             &Main{
                 width: 280px;
+                &Setting{
+                    width: 20px;
+                    height: 20px;
+                }
                 &Info{
                     
                     &Item{

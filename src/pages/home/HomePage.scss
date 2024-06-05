@@ -54,6 +54,9 @@
             display: none;
         }
     }
+    .container{
+        padding: 0 10px !important;
+    }
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
@@ -63,6 +66,7 @@
         }
     }
     .games__title{
+        font-size: 30px;
         &::after{
             display: none ;
         }

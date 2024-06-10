@@ -112,14 +112,17 @@
             margin-top: 20px;
             
             &Item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
                 width: 73px;
                 height: 40px;
                 background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
                 border-radius: 100px;
                 font-family: OxaniumBold;
-                font-size: 16px;
-                padding: 10px 15px;
+                font-size: 15px;
+                // padding: 10px 15px;
                 color: #FFFFFF;
             }
             //Будут рандомные цвета надо удалить этот код
@@ -189,7 +192,8 @@
             }
             &Icon{
                 cursor: pointer;
-                
+                width: 18px;
+                height: 18px;
             }
         }
         &X{
@@ -197,8 +201,11 @@
             justify-content: flex-start;
             margin-top: 10px;
             &Item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
-                padding: 10px 20px;
+                // padding: 10px 20px;
                 width: 73px;
                 height: 40px;
                 background: #4A484A;

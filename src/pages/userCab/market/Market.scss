@@ -63,7 +63,7 @@
         grid-area: 3 / 1 / 5 / 2;
         &Title{
             font-family: OxaniumMedium;
-            font-size: 10px;
+            font-size: 13px;
             color: #FFFFFF;
         }
         &Skin{
@@ -78,7 +78,7 @@
             justify-content: space-between;
             &Descr{
                 font-family: OxaniumMedium;
-                font-size: 10px;
+                font-size: 13px;
                 color: #FFFFFF;
             }
             &Count{
@@ -125,6 +125,10 @@
                 font-size: 16px;
                 color: #FFFFFF;
             }
+            img{
+                width: 17px;
+                height: 17px;
+            }
         }
     }
     &__skins{
@@ -166,13 +170,16 @@
                 color: #FFFFFF;
             }
             &Count{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
                 width: 64px;
                 height: 50px;
                 background: #2F2C2C;
                 font-family: OxaniumBold;
                 font-size: 12px;
-                padding: 20px 16px;
+                // padding: 20px 16px;
                 color: #FFFFFF;
             }
             &Setting{

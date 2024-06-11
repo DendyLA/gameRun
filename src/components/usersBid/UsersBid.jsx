@@ -14,7 +14,7 @@ function UsersBid({mainColor, btnColor}) {
     return(
         <div className="usersBid" style={colorBid}>
             <img src={userPhoto} alt="user" className="usersBid__image" />
-            <div className="usersBid__skin"><img src={userPhoto} alt="skin" /></div>
+            {/* <div className="usersBid__skin"><img src={userPhoto} alt="skin" /></div> */}
             <div className="usersBid__userName">Tuana Ergin</div>
             <div className="usersBid__userBalance">25.95$</div>
             <div className="usersBid__userStatus" style={colorStatus}>В ИГРЕ</div>

@@ -239,13 +239,16 @@
                 }
             }
             &Button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: absolute;
                 cursor: pointer;
-                padding: 17px 21px;
+                // padding: 17px 21px;
                 width: 180px;
                 height: 53px;
                 font-family: OxaniumMedium;
-                font-size: 16px;
+                font-size: 15px;
                 color: #FFFFFF;
                 background: linear-gradient(90deg, #FF5A3A 0%, #E1231C 100%);
                 border-radius: 100px;
